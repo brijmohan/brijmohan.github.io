@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Brij Mohan Lal Srivastava</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;I am a PhD student at Inria working in the &lt;a href=&#34;https://team.inria.fr/magnet/&#34; target=&#34;_blank&#34;&gt;Magnet&lt;/a&gt; and &lt;a href=&#34;https://team.inria.fr/multispeech/&#34; target=&#34;_blank&#34;&gt;Multispeech&lt;/a&gt; team. I am supervised by &lt;a href=&#34;http://researchers.lille.inria.fr/abellet/&#34; target=&#34;_blank&#34;&gt;Dr. Aurélien Bellet&lt;/a&gt;, &lt;a href=&#34;https://members.loria.fr/EVincent/&#34; target=&#34;_blank&#34;&gt;Dr. Emmanuel Vincent&lt;/a&gt; and &lt;a href=&#34;http://researchers.lille.inria.fr/tommasi/&#34; target=&#34;_blank&#34;&gt;Dr. Marc Tommasi&lt;/a&gt;. My work mainly focuses towards privacy-preserving speech processing.&lt;/p&gt;
+
+&lt;p&gt;To know more about my previous works, please visit &lt;a href=&#34;https://researchweb.iiit.ac.in/~brijmohanlal.s&#34; target=&#34;_blank&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Aurélien Bellet</title>
+      <link>/authors/aurelien-bellet/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/aurelien-bellet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emmanuel Vincent</title>
+      <link>/authors/emmanuel-vincent/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/emmanuel-vincent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marc Tommasi</title>
+      <link>/authors/marc-tommasi/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/marc-tommasi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Md Sahidullah</title>
+      <link>/authors/md-sahidullah/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/md-sahidullah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nathalie Vauquier</title>
+      <link>/authors/nathalie-vauquier/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/nathalie-vauquier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sunayana Sitaram</title>
+      <link>/authors/sunayana-sitaram/</link>
+      <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/sunayana-sitaram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anil Kumar Vuppala</title>
+      <link>/authors/anil-kumar-vuppala/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/anil-kumar-vuppala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hari Krishna Vydana</title>
+      <link>/authors/hari-krishna-vydana/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/hari-krishna-vydana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manish Shrivastava</title>
+      <link>/authors/manish-shrivastava/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/manish-shrivastava/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
