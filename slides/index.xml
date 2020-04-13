@@ -94,7 +94,7 @@ Design 3 attackers based on their &amp;ldquo;knowledge&amp;rdquo; of anonymizati
 &lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;fragment &#34; &gt;
-Evaluation of &lt;strong&gt;privacy&lt;/strong&gt; and &lt;strong&gt;utility&lt;/strong&gt;.
+Evaluation of &lt;span style=&#34;color: #EF7A7A&#34;&gt;privacy&lt;/span&gt; and &lt;span style=&#34;color: #EF7A7A&#34;&gt;utility&lt;/span&gt;.
 &lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -119,179 +119,285 @@ Evaluation of &lt;strong&gt;privacy&lt;/strong&gt; and &lt;strong&gt;utility&lt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;h1 id=&#34;voice-conversion-based-anonymization&#34;&gt;Voice conversion based anonymization&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;relevance&#34;&gt;Relevance&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Logical speaker anonymization framework
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;fragment &#34; &gt;
+Convert &lt;span style=&#34;color: #31B404&#34;&gt;source&lt;/span&gt; speaker&amp;rsquo;s voice to a &lt;span style=&#34;color: #31B404&#34;&gt;target&lt;/span&gt; speaker
+&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;fragment &#34; &gt;
+Choice of &lt;span style=&#34;color: #31B404&#34;&gt;target&lt;/span&gt; speaker is critical for strength of anonymization
+&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;fragment &#34; &gt;
+Allows data publication
+&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;fragment &#34; &gt;
+First proposed in 2009 [2], many techniques proposed thereafter.
+&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;three-vc-methods&#34;&gt;Three VC methods&lt;/h2&gt;
+
+&lt;p&gt;VC methods are selected based on the following criteria:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Can we steal your vocal identity from the internet?: Initial investigation of cloning Obama’s voice using GAN, WaveNet and low-quality found data,” in Proc. Odyssey 2018&lt;/li&gt;
+&lt;li&gt;Non-parallel&lt;/li&gt;
+&lt;li&gt;Many-to-many&lt;/li&gt;
+&lt;li&gt;Source/language independent&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;h2 id=&#34;three-vc-methods-1&#34;&gt;Three VC methods&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&#34;fragment &#34; &gt;
+&lt;span style=&#34;color: #EF7A7A&#34;&gt;VoiceMask&lt;/span&gt;: simple frequency warping based on composition of two functions $B$ and $Q$: $ f&amp;rsquo; = B(Q(f, \alpha), \beta) $
+&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;fragment &#34; &gt;
+&lt;span style=&#34;color: #EF7A7A&#34;&gt;Vocal Tract Length Normalization&lt;/span&gt;: learn transformation parameters between source and target class spectra.
+&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;fragment &#34; &gt;
+&lt;span style=&#34;color: #EF7A7A&#34;&gt;Disentangled Speech Representation&lt;/span&gt;: Separate encoders for &lt;strong&gt;content&lt;/strong&gt; (instance normalization) and &lt;strong&gt;speaker&lt;/strong&gt; (average pooling) information.
+&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Code block:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
-if porridge == &amp;quot;blueberry&amp;quot;:
-    print(&amp;quot;Eating...&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;experiments&#34;&gt;Experiments&lt;/h1&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;h2 id=&#34;target-selection-strategies&#34;&gt;Target selection strategies&lt;/h2&gt;
 
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-
-&lt;p&gt;Block math:&lt;/p&gt;
-
-&lt;p&gt;$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-   One
+&lt;div style=&#34;width: 40em; height: 10em; margin-left: -8em&#34;&gt; 
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/sconst.png&#34; style=&#34;border: none; width: 10em&#34; /&gt;  
 &lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-   &lt;strong&gt;Two&lt;/strong&gt;
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/sperm.png&#34; style=&#34;border: none; width: 10em&#34; /&gt;  
 &lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-   Three
-&lt;/span&gt;&lt;/p&gt;
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/srand.png&#34; style=&#34;border: none; width: 10em&#34; /&gt;  
+&lt;/span&gt;
+&lt;/div&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;h2 id=&#34;anonymization-framework&#34;&gt;Anonymization framework&lt;/h2&gt;
+
+&lt;div style=&#34;height: 10em;&#34;&gt; 
+  &lt;img src=&#34;/img/anon_scheme.svg&#34; style=&#34;border: none; width: 30em&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;design-of-attackers&#34;&gt;Design of Attackers&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;ignorant-attacker&#34;&gt;Ignorant attacker&lt;/h2&gt;
+
+&lt;div style=&#34;height: 10em;&#34;&gt; 
+  &lt;img src=&#34;/img/ignorant_attacker.svg&#34; style=&#34;border: none; width: 30em&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;semi-informed-attacker&#34;&gt;Semi-Informed attacker&lt;/h2&gt;
+
+&lt;div style=&#34;height: 10em;&#34;&gt; 
+  &lt;img src=&#34;/img/semi_informed_attacker.svg&#34; style=&#34;border: none; width: 30em&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;informed-attacker&#34;&gt;Informed attacker&lt;/h2&gt;
+
+&lt;div style=&#34;height: 10em;&#34;&gt; 
+  &lt;img src=&#34;/img/informed_attacker.svg&#34; style=&#34;border: none; width: 30em&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;training-data&#34;&gt;Training data&lt;/h2&gt;
+
+&lt;p&gt;All the data subsets are derived from LibriSpeech corpus.&lt;/p&gt;
+
+&lt;table style=&#34;font-size: 30pt&#34;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Component&lt;/th&gt;
+            &lt;th&gt;Training data&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;VoiceMask&lt;/td&gt;
+        &lt;td&gt;None&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Disentangled VC&lt;/td&gt;
+        &lt;td&gt;LibriTTS 100h&lt;/td&gt;
+    &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;VTLN&lt;/td&gt;
+        &lt;td rowspan=3&gt;LibriSpeech 460h&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;Attackers&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;ASR for evaluation&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;evaluation-data&#34;&gt;Evaluation data&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Male&lt;/th&gt;
+&lt;th&gt;Female&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;#Speakers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Genuine trials&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;449&lt;/td&gt;
+&lt;td&gt;548&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Impostor trials&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;9457&lt;/td&gt;
+&lt;td&gt;11,196&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;evaluation-protocol&#34;&gt;Evaluation protocol&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;li&gt;Attackers are simulated using speaker verification, which produce PLDA scores.&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;color: #EF7A7A&#34;&gt;PLDA scores&lt;/span&gt; = log-likelihood ratio between &lt;em&gt;same-speaker&lt;/em&gt; and &lt;em&gt;different-speaker&lt;/em&gt; hypotheses.&lt;/li&gt;
+&lt;li&gt;Equal Error Rate (&lt;span style=&#34;color: #31B404&#34;&gt;EER&lt;/span&gt;) is computed using PLDA scores.&lt;/li&gt;
+&lt;li&gt;Higher EER indicates &lt;span style=&#34;color: #EF7A7A&#34;&gt;high privacy&lt;/span&gt;; Lower EER indicates &lt;span style=&#34;color: #EF7A7A&#34;&gt;low privacy&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Utility of anonymized speech is quantified using Word Error Rate (&lt;span style=&#34;color: #31B404&#34;&gt;WER&lt;/span&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{% /speaker_note %}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/aside&gt;
+&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;h3 id=&#34;results-on-privacy-eer&#34;&gt;Results on privacy (EER)&lt;/h3&gt;
+
+&lt;div style=&#34;font-size: 20pt&#34;&gt;As the knowledge of attacker increases, &lt;span style=&#34;color: #EF7A7A&#34;&gt;privacy&lt;/span&gt; (EER) decreases.&lt;/div&gt;
+
+&lt;div style=&#34;width: 10em; height: 10em&#34;&gt; 
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/eer_bars_baseline.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/eer_bars_ig.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/eer_bars_si.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/eer_bars_in.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
+&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;plda-score-distribution&#34;&gt;PLDA score distribution&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;li&gt;More overlap between the score distribution ensures more privacy.&lt;/li&gt;
+&lt;li&gt;Overlap decreases as we move from &lt;em&gt;Ignorant&lt;/em&gt; to &lt;em&gt;Informed&lt;/em&gt; attacker.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;div style=&#34;height: 10em;&#34;&gt; 
+  &lt;img src=&#34;/img/score_dist.svg&#34; style=&#34;border: none; width: 40em&#34; /&gt;
+&lt;/div&gt;
+
 &lt;hr /&gt;
+
+&lt;h3 id=&#34;results-on-utility-wer&#34;&gt;Results on utility (WER)&lt;/h3&gt;
+
+&lt;div style=&#34;font-size: 20pt&#34;&gt;
+- With rise in WER, utility decreases for all VC algorithms. &lt;br /&gt;
+- VoiceMask and VTLN produce reasonable loss of utility.
+&lt;/div&gt;
+
+&lt;div style=&#34;height: 10em;&#34;&gt; 
+  &lt;img src=&#34;/img/wer_bars.svg&#34; style=&#34;border: none;&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;li&gt;Investigated VC algorithms for speaker anonymization.&lt;/li&gt;
+&lt;li&gt;We show that &lt;span style=&#34;color: #31B404&#34;&gt;target selection&lt;/span&gt; and &lt;span style=&#34;color: #31B404&#34;&gt;attacker&amp;rsquo;s knowledge&lt;/span&gt; are critical for strength of anonymization.&lt;/li&gt;
+&lt;li&gt;Simple methods can provide reasonable protection.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
+&lt;h3 id=&#34;future-directions&#34;&gt;Future directions&lt;/h3&gt;
 
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/img/boards.jpg&#34;
-  &gt;
-
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
-{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Search for speaker anonymization which produces &lt;span style=&#34;color: #EF7A7A&#34;&gt;high EER&lt;/span&gt;, even in &lt;em&gt;Informed&lt;/em&gt; attack scenario.&lt;/li&gt;
+&lt;li&gt;Explore cross-gender anonnymization.&lt;/li&gt;
+&lt;li&gt;Analyse the PLDA scores using other metrics.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Can we steal your vocal identity from the internet?: Initial investigation of cloning Obama’s voice using GAN, WaveNet and low-quality found data,” in Proc. Odyssey 2018&lt;/li&gt;
+&lt;li&gt;Jin et al, &amp;ldquo;Speaker de-identification via voice transformation&amp;rdquo;, ASRU 2009&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;hr /&gt;
 
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;h2 id=&#34;questions&#34;&gt;Questions?&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please email me at: &lt;code&gt;brij.srivastava@inria.fr&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;div style=&#34;height: 10em;&#34;&gt; 
+  &lt;img src=&#34;/img/namaste.jpeg&#34; style=&#34;border: none;&#34; /&gt;
+&lt;/div&gt;
 </description>
     </item>
     
