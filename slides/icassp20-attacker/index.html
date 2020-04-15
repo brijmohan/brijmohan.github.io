@@ -89,50 +89,12 @@
     
       
 
-<h2 id="outline">Outline</h2>
-
-<ul>
-<li><span class="fragment " >
-Context : need for privacy
-</span></li>
-<li><span class="fragment " >
-Contributions
-</span></li>
-<li><span class="fragment " >
-Threat model
-</span></li>
-<li><span class="fragment " >
-Voice conversion based anonymization
-</span></li>
-<li><span class="fragment " >
-Experiments
-</span></li>
-<li><span class="fragment " >
-Results
-</span></li>
-<li><span class="fragment " >
-Conclusion
-</span></li>
-</ul>
-
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-
 <h2 id="context">Context</h2>
 
 <ul>
-<li><em>Distinguishable</em> and <em>Repeatable</em> biometric references can be extracted from speech, such as, x-vectors.</li>
-<li>Advances in Speech synthesis, Voice cloning [1] and Speaker recognition pose severe privacy threat.</li>
-<li>An <strong>attacker</strong> tries to reveal the identity of the speaker in a public dataset.</li>
-<li>The attacker has access to some &ldquo;found data&rdquo; and &ldquo;knowledge&rdquo; of anonymization.</li>
+<li>Because <em>Distinguishable</em> and <em>Repeatable</em> biometric references can be extracted from speech, speech data is private information and speech processing pose severe privacy threat</li>
+<li>Before publication, it must be <span class="red">anonymized</span> such that original speaker cannot be linked to the public anonymized dataset</li>
+<li>The anonymized data must be private as well as <span class="red">fit for use</span> in downstream tasks</li>
 </ul>
 
 
@@ -149,21 +111,9 @@ Conclusion
 <h2 id="contributions">Contributions</h2>
 
 <ul>
-<li><span class="fragment " >
-Compare anonymization using 3 voice conversion methods.
-</span></li>
-<li><span class="fragment " >
-Design 3 attackers based on their &ldquo;knowledge&rdquo; of anonymization:
-
-<ul>
-<li>Ignorant</li>
-<li>Semi-Informed</li>
-<li>Informed
-</span></li>
-</ul></li>
-<li><span class="fragment " >
-Evaluation of <span style="color: #EF7A7A">privacy</span> and <span style="color: #EF7A7A">utility</span>.
-</span></li>
+<li>Compare anonymization using 3 voice conversion methods</li>
+<li>Propose framework to design different levels of knowledge for the <span class="red">attacker</span> w.r.t. the anonymization scheme/strategy:</li>
+<li>Evaluation of <span class="red">privacy</span> and <span class="red">utility</span></li>
 </ul>
 
 
@@ -179,18 +129,22 @@ Evaluation of <span style="color: #EF7A7A">privacy</span> and <span style="color
 
 <h2 id="threat-model">Threat model</h2>
 
+<div style="font-size: 15pt; text-align: left; margin-left: 10em"> The <span class="red">speaker</span> publishes the speech dataset after anonymization</div>
+<div style="font-size: 15pt; text-align: left; margin-left: 10em"> The <span class="red">user</span> tries to use the anonymized public dataset for downstream tasks</div>
+<div style="font-size: 15pt; text-align: left; margin-left: 10em"> The <span class="red">attacker</span> tries to discover the identity of the speaker in a public dataset</div>
+
 <div style="width: 10em; height: 10em;"> 
   <span class="fragment " >
-   <img src="/img/threat_model_ppt1_1.svg" style="border: none; position: absolute; background: #ffffff" />  
+   <img src="/img/threat_model_ppt1_1.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
 </span>
   <span class="fragment " >
-   <img src="/img/threat_model_ppt2_2.svg" style="border: none; position: absolute; background: #ffffff" />  
+   <img src="/img/threat_model_ppt3_3.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
 </span>
   <span class="fragment " >
-   <img src="/img/threat_model_ppt3_3.svg" style="border: none; position: absolute; background: #ffffff" />  
+   <img src="/img/threat_model_ppt2_2.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
 </span>
   <span class="fragment " >
-   <img src="/img/threat_model_ppt_full.svg" style="border: none; position: absolute; background: #ffffff" />  
+   <img src="/img/threat_model_ppt_full.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
 </span>
 </div>
 
@@ -218,25 +172,17 @@ Evaluation of <span style="color: #EF7A7A">privacy</span> and <span style="color
     
       
 
-<h2 id="relevance">Relevance</h2>
+<h2 id="why-vc-based-anonymization">Why VC based anonymization?</h2>
 
 <ul>
 <li>Logical speaker anonymization framework
 
 <ul>
-<li><span class="fragment " >
-Convert <span style="color: #31B404">source</span> speaker&rsquo;s voice to a <span style="color: #31B404">target</span> speaker
-</span></li>
-<li><span class="fragment " >
-Choice of <span style="color: #31B404">target</span> speaker is critical for strength of anonymization
-</span></li>
+<li>Convert <span class="green">source</span> speaker&rsquo;s voice to a <span class="green">target</span> speaker</li>
+<li>Conversion may not be perfect and residual <span class="green">source</span> speaker information might be present, hence choice of <span class="green">target</span> speaker is critical for strength of anonymization</li>
 </ul></li>
-<li><span class="fragment " >
-Allows data publication
-</span></li>
-<li><span class="fragment " >
-First proposed in 2009 [2], many techniques proposed thereafter.
-</span></li>
+<li>Allows data publication</li>
+<li>First proposed in 2009 [2], many techniques proposed thereafter</li>
 </ul>
 
 
@@ -274,15 +220,9 @@ First proposed in 2009 [2], many techniques proposed thereafter.
 <h2 id="three-vc-methods-1">Three VC methods</h2>
 
 <ol>
-<li><span class="fragment " >
-<span style="color: #EF7A7A">VoiceMask</span>: simple frequency warping based on composition of two functions $B$ and $Q$: $ f&rsquo; = B(Q(f, \alpha), \beta) $
-</span></li>
-<li><span class="fragment " >
-<span style="color: #EF7A7A">Vocal Tract Length Normalization</span>: learn transformation parameters between source and target class spectra.
-</span></li>
-<li><span class="fragment " >
-<span style="color: #EF7A7A">Disentangled Speech Representation</span>: Separate encoders for <strong>content</strong> (instance normalization) and <strong>speaker</strong> (average pooling) information.
-</span></li>
+<li><span class="red">VoiceMask</span>: simple frequency warping based on composition of two functions $B$ and $Q$: $ f&rsquo; = B(Q(f, \alpha), \beta) $</li>
+<li><span class="red">Vocal Tract Length Normalization</span>: learn transformation parameters between source and target class spectra</li>
+<li><span class="red">Disentangled Speech Representation</span>: Separate encoders for <strong>content</strong> (instance normalization) and <strong>speaker</strong> (average pooling) information</li>
 </ol>
 
 
@@ -296,7 +236,28 @@ First proposed in 2009 [2], many techniques proposed thereafter.
     
       
 
-<h1 id="experiments">Experiments</h1>
+<h1 id="modeling">Modeling</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="anonymization-framework">Anonymization framework</h2>
+
+<blockquote>
+<div style="font-size: 20pt"> The <span class="red">target</span> can be a single speaker from the pool or an average of many speakers.</div>
+</blockquote>
+
+<div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
+  <img src="/img/anon_scheme.svg" style="border: none; width: 30em; background: #ffffff" />
+</div>
 
 
     </section>
@@ -321,23 +282,6 @@ First proposed in 2009 [2], many techniques proposed thereafter.
   <span class="fragment " >
    <img src="/img/srand.png" style="border: none; width: 10em" />  
 </span>
-</div>
-
-
-    </section>
-    
-
-    
-    
-    
-    <section>
-    
-      
-
-<h2 id="anonymization-framework">Anonymization framework</h2>
-
-<div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
-  <img src="/img/anon_scheme.svg" style="border: none; width: 30em; background: #ffffff" />
 </div>
 
 
@@ -415,36 +359,58 @@ First proposed in 2009 [2], many techniques proposed thereafter.
     
       
 
-<h2 id="training-data">Training data</h2>
+<h1 id="experiments">Experiments</h1>
 
-<p>All the data subsets are derived from LibriSpeech corpus.</p>
 
-<table style="font-size: 30pt">
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h3 id="training-data">Training data</h3>
+
+<blockquote>
+<div style="font-size: 15pt"> All the data subsets are derived from LibriSpeech corpus. </div>
+</blockquote>
+
+<table style="font-size: 17pt">
     <thead>
         <tr>
             <th>Component</th>
-            <th>Training data</th>
+            <th>Dataset</th>
+            <th>Training</th>
         </tr>
     </thead>
     <tbody>
     <tr>
         <td>VoiceMask</td>
         <td>None</td>
+        <td>No training required, ($\alpha$, $\beta$ are selected randomly from a predefined range)</td>
     </tr>
     <tr>
         <td>Disentangled VC</td>
         <td>LibriTTS 100h</td>
+        <td>(Content, Speaker) encoders are trained end-to-end to reconstruct the speech waveform</td>
     </tr>
         <tr>
         <td>VTLN</td>
         <td rowspan=3>LibriSpeech 460h</td>
+        <td>Speech frames are clustered in unsupervised manner using k-means (8 centroids), and transformation paramters are learnt</td>
         </tr>
         <tr>
         <td>Attackers</td>
+            <td>Simulated using x-vector + PLDA based speaker verification system. Training data is anonymized to induce "knowledge" of anonymization</td>
         </tr>
         <tr>
         <td>ASR for evaluation</td>
+        <td>End-to-End ASR is trained with encoder composed of VGG+BLSTM network and hybrid CTC + Attention decoder</td>
         </tr>
+    <tr></tr>
     </tbody>
 </table>
 
@@ -505,11 +471,9 @@ First proposed in 2009 [2], many techniques proposed thereafter.
 <h2 id="evaluation-protocol">Evaluation protocol</h2>
 
 <ul>
-<li>Attackers are simulated using speaker verification, which produce PLDA scores.</li>
-<li><span style="color: #EF7A7A">PLDA scores</span> = log-likelihood ratio between <em>same-speaker</em> and <em>different-speaker</em> hypotheses.</li>
-<li>Equal Error Rate (<span style="color: #31B404">EER</span>) is computed using PLDA scores.</li>
-<li>Higher EER indicates <span style="color: #EF7A7A">high privacy</span>; Lower EER indicates <span style="color: #EF7A7A">low privacy</span>.</li>
-<li>Utility of anonymized speech is quantified using Word Error Rate (<span style="color: #31B404">WER</span>).</li>
+<li>Attackers are simulated using speaker verification, which produce PLDA scores</li>
+<li>Measure of <span class="red">privacy</span>: Equal Error Rate (<span class="green">EER</span>) computed using PLDA scores</li>
+<li>Measure of <span class="red">utility</span>: Word Error Rate (<span class="green">WER</span>)</li>
 </ul>
 
 
@@ -538,7 +502,11 @@ First proposed in 2009 [2], many techniques proposed thereafter.
 
 <h3 id="results-on-privacy-eer">Results on privacy (EER)</h3>
 
-<div style="font-size: 20pt">As the knowledge of attacker increases, <span style="color: #EF7A7A">privacy</span> (EER) decreases.</div>
+<ul style="font-size: 15pt">
+  <li>Informed attackers are not a realistic scenario but results show that speaker information can be discovered</li>
+  <li>Results are promising in Semi-Informed case, reasonable privacy protection can be provided</li>
+  <li>Target selection using <i>perm</i> strategy outperforms the rest</li>
+</ul>
 
 <div style="width: 10em; height: 10em"> 
   <span class="fragment " >
@@ -569,8 +537,8 @@ First proposed in 2009 [2], many techniques proposed thereafter.
 <h2 id="plda-score-distribution">PLDA score distribution</h2>
 
 <ul>
-<li>More overlap between the score distribution ensures more privacy.</li>
-<li>Overlap decreases as we move from <em>Ignorant</em> to <em>Informed</em> attacker.</li>
+<li>More overlap between the score distribution ensures more privacy</li>
+<li>Overlap decreases as we move from <em>Ignorant</em> to <em>Informed</em> attacker</li>
 </ul>
 
 <div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
@@ -591,8 +559,8 @@ First proposed in 2009 [2], many techniques proposed thereafter.
 <h3 id="results-on-utility-wer">Results on utility (WER)</h3>
 
 <div style="font-size: 20pt">
-- With rise in WER, utility decreases for all VC algorithms. <br />
-- VoiceMask and VTLN produce reasonable loss of utility.
+- With rise in WER, utility decreases for all VC algorithms <br />
+- VoiceMask and VTLN produce reasonable loss of utility
 </div>
 
 <div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
@@ -613,9 +581,9 @@ First proposed in 2009 [2], many techniques proposed thereafter.
 <h3 id="conclusion">Conclusion</h3>
 
 <ul>
-<li>Investigated VC algorithms for speaker anonymization.</li>
-<li>We show that <span style="color: #31B404">target selection</span> and <span style="color: #31B404">attacker&rsquo;s knowledge</span> are critical for strength of anonymization.</li>
-<li>Simple methods can provide reasonable protection.</li>
+<li>Investigated VC algorithms for speaker anonymization</li>
+<li>We show that <span class="green">target selection</span> and <span class="green">attacker&rsquo;s knowledge</span> are critical for strength of anonymization</li>
+<li>Simple methods can provide reasonable protection</li>
 </ul>
 
 
@@ -632,9 +600,9 @@ First proposed in 2009 [2], many techniques proposed thereafter.
 <h3 id="future-directions">Future directions</h3>
 
 <ul>
-<li>Search for speaker anonymization which produces <span style="color: #EF7A7A">high EER</span>, even in <em>Informed</em> attack scenario.</li>
-<li>Explore cross-gender anonnymization.</li>
-<li>Analyse the PLDA scores using other metrics.</li>
+<li>Search for speaker anonymization which produces <span class="red">high EER</span>, even in <em>Informed</em> attack scenario</li>
+<li>Explore cross-gender anonymization</li>
+<li>Analyse the PLDA scores using other metrics</li>
 </ul>
 
 
@@ -699,7 +667,7 @@ First proposed in 2009 [2], many techniques proposed thereafter.
       { src: '\/js\/vendor\/reveal.js\/plugin\/notes\/notes.js', async: true }
     ]};
 
-    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true };
+    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true, slideNumber: "c/t" };
     let revealOptions = Object.assign({}, revealDefaults, revealPlugins);
     Reveal.initialize(revealOptions);
   </script>
