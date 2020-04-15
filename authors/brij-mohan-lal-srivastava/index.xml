@@ -48,9 +48,10 @@
 &lt;h2 id=&#34;context&#34;&gt;Context&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Because &lt;em&gt;Distinguishable&lt;/em&gt; and &lt;em&gt;Repeatable&lt;/em&gt; biometric references can be extracted from speech, speech data is private information and speech processing pose severe privacy threat&lt;/li&gt;
-&lt;li&gt;Before publication, it must be &lt;span class=&#34;red&#34;&gt;anonymized&lt;/span&gt; such that original speaker cannot be linked to the public anonymized dataset&lt;/li&gt;
-&lt;li&gt;The anonymized data must be private as well as &lt;span class=&#34;red&#34;&gt;fit for use&lt;/span&gt; in downstream tasks&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Distinguishable&lt;/em&gt; and &lt;em&gt;Repeatable&lt;/em&gt; biometric references can be extracted from speech&lt;/li&gt;
+&lt;li&gt;Speech processing pose severe privacy threat&lt;/li&gt;
+&lt;li&gt;Anonymization ensures that original speaker cannot be linked to the published anonymized dataset&lt;/li&gt;
+&lt;li&gt;The anonymized data must be &lt;span class=&#34;red&#34;&gt;fit for use&lt;/span&gt; in downstream tasks&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -59,29 +60,35 @@
 
 &lt;ul&gt;
 &lt;li&gt;Compare anonymization using 3 voice conversion methods&lt;/li&gt;
-&lt;li&gt;Propose framework to design different levels of knowledge for the &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt; w.r.t. the anonymization scheme/strategy:&lt;/li&gt;
+&lt;li&gt;Propose framework to design different levels of knowledge for the &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt; w.r.t. the anonymization scheme/strategy&lt;/li&gt;
 &lt;li&gt;Evaluation of &lt;span class=&#34;red&#34;&gt;privacy&lt;/span&gt; and &lt;span class=&#34;red&#34;&gt;utility&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;threat-model&#34;&gt;Threat model&lt;/h2&gt;
+&lt;h3 id=&#34;threat-model&#34;&gt;Threat model&lt;/h3&gt;
 
-&lt;div style=&#34;font-size: 15pt; text-align: left; margin-left: 10em&#34;&gt; The &lt;span class=&#34;red&#34;&gt;speaker&lt;/span&gt; publishes the speech dataset after anonymization&lt;/div&gt;
-&lt;div style=&#34;font-size: 15pt; text-align: left; margin-left: 10em&#34;&gt; The &lt;span class=&#34;red&#34;&gt;user&lt;/span&gt; tries to use the anonymized public dataset for downstream tasks&lt;/div&gt;
-&lt;div style=&#34;font-size: 15pt; text-align: left; margin-left: 10em&#34;&gt; The &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt; tries to discover the identity of the speaker in a public dataset&lt;/div&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
+   &lt;div style=&#34;font-size: 16pt; text-align: left; margin-left: 10em&#34;&gt; The &lt;span class=&#34;red&#34;&gt;speaker&lt;/span&gt; publishes the speech dataset after anonymization&lt;/div&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
+   &lt;div style=&#34;font-size: 16pt; text-align: left; margin-left: 10em&#34;&gt; The &lt;span class=&#34;red&#34;&gt;user&lt;/span&gt; tries to use the anonymized public dataset for downstream tasks&lt;/div&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;div style=&#34;font-size: 16pt; text-align: left; margin-left: 10em&#34;&gt; The &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt; tries to discover the identity of the speaker in a public dataset&lt;/div&gt;
+&lt;/span&gt;&lt;/p&gt;
 
 &lt;div style=&#34;width: 10em; height: 10em;&#34;&gt; 
-  &lt;span class=&#34;fragment &#34; &gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
    &lt;img src=&#34;/img/threat_model_ppt1_1.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
 &lt;/span&gt;
-  &lt;span class=&#34;fragment &#34; &gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
    &lt;img src=&#34;/img/threat_model_ppt3_3.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
 &lt;/span&gt;
-  &lt;span class=&#34;fragment &#34; &gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
    &lt;img src=&#34;/img/threat_model_ppt2_2.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
 &lt;/span&gt;
-  &lt;span class=&#34;fragment &#34; &gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;4&#34;&gt;
    &lt;img src=&#34;/img/threat_model_ppt_full.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
 &lt;/span&gt;
 &lt;/div&gt;
@@ -92,14 +99,15 @@
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;why-vc-based-anonymization&#34;&gt;Why VC based anonymization?&lt;/h2&gt;
+&lt;h2 id=&#34;voice-conversion&#34;&gt;Voice conversion&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Logical speaker anonymization framework
 
 &lt;ul&gt;
 &lt;li&gt;Convert &lt;span class=&#34;green&#34;&gt;source&lt;/span&gt; speaker&amp;rsquo;s voice to a &lt;span class=&#34;green&#34;&gt;target&lt;/span&gt; speaker&lt;/li&gt;
-&lt;li&gt;Conversion may not be perfect and residual &lt;span class=&#34;green&#34;&gt;source&lt;/span&gt; speaker information might be present, hence choice of &lt;span class=&#34;green&#34;&gt;target&lt;/span&gt; speaker is critical for strength of anonymization&lt;/li&gt;
+&lt;li&gt;Conversion may not be perfect, residual &lt;span class=&#34;green&#34;&gt;source&lt;/span&gt; speaker info might be present&lt;/li&gt;
+&lt;li&gt;Choice of &lt;span class=&#34;green&#34;&gt;target&lt;/span&gt; speaker is critical for strength of anonymization&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Allows data publication&lt;/li&gt;
 &lt;li&gt;First proposed in 2009 [2], many techniques proposed thereafter&lt;/li&gt;
@@ -107,9 +115,11 @@
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;three-vc-methods&#34;&gt;Three VC methods&lt;/h2&gt;
+&lt;h2 id=&#34;vc-methods-criteria&#34;&gt;VC methods: criteria&lt;/h2&gt;
 
-&lt;p&gt;VC methods are selected based on the following criteria:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div style=&#34;font-size: 20pt&#34;&gt; VC methods are selected based on the following criteria:&lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Non-parallel&lt;/li&gt;
@@ -119,12 +129,12 @@
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;three-vc-methods-1&#34;&gt;Three VC methods&lt;/h2&gt;
+&lt;h2 id=&#34;three-vc-methods&#34;&gt;Three VC methods&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;span class=&#34;red&#34;&gt;VoiceMask&lt;/span&gt;: simple frequency warping based on composition of two functions $B$ and $Q$: $ f&amp;rsquo; = B(Q(f, \alpha), \beta) $&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;red&#34;&gt;Vocal Tract Length Normalization&lt;/span&gt;: learn transformation parameters between source and target class spectra&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Disentangled Speech Representation&lt;/span&gt;: Separate encoders for &lt;strong&gt;content&lt;/strong&gt; (instance normalization) and &lt;strong&gt;speaker&lt;/strong&gt; (average pooling) information&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Disentangled Speech Representation&lt;/span&gt;: separate encoders for &lt;strong&gt;content&lt;/strong&gt; (instance normalization) and &lt;strong&gt;speaker&lt;/strong&gt; (average pooling) information&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;hr /&gt;
@@ -176,7 +186,7 @@
 &lt;h2 id=&#34;semi-informed-attacker&#34;&gt;Semi-Informed attacker&lt;/h2&gt;
 
 &lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
-  &lt;img src=&#34;/img/semi_informed_attacker.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
+  &lt;img src=&#34;/img/semi_informed_attacker_1.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
@@ -184,7 +194,7 @@
 &lt;h2 id=&#34;informed-attacker&#34;&gt;Informed attacker&lt;/h2&gt;
 
 &lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
-  &lt;img src=&#34;/img/informed_attacker.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
+  &lt;img src=&#34;/img/informed_attacker_1.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
@@ -287,23 +297,29 @@
 
 &lt;h3 id=&#34;results-on-privacy-eer&#34;&gt;Results on privacy (EER)&lt;/h3&gt;
 
-&lt;ul style=&#34;font-size: 15pt&#34;&gt;
-  &lt;li&gt;Informed attackers are not a realistic scenario but results show that speaker information can be discovered&lt;/li&gt;
-  &lt;li&gt;Results are promising in Semi-Informed case, reasonable privacy protection can be provided&lt;/li&gt;
-  &lt;li&gt;Target selection using &lt;i&gt;perm&lt;/i&gt; strategy outperforms the rest&lt;/li&gt;
+&lt;ul style=&#34;font-size: 18pt&#34;&gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;li&gt;Reasonable privacy protection can be provided in Semi-Informed case&lt;/li&gt; 
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;li&gt;&lt;i&gt;perm&lt;/i&gt; strategy outperforms the rest&lt;/li&gt; 
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;4&#34;&gt;
+   &lt;li&gt;Informed attacker show speaker information can be discovered, but not realistic&lt;/li&gt; 
+&lt;/span&gt;
 &lt;/ul&gt;
 
 &lt;div style=&#34;width: 10em; height: 10em&#34;&gt; 
-  &lt;span class=&#34;fragment &#34; &gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
    &lt;img src=&#34;/img/eer_bars_baseline.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
 &lt;/span&gt;
-  &lt;span class=&#34;fragment &#34; &gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
    &lt;img src=&#34;/img/eer_bars_ig.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
 &lt;/span&gt;
-  &lt;span class=&#34;fragment &#34; &gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
    &lt;img src=&#34;/img/eer_bars_si.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
 &lt;/span&gt;
-  &lt;span class=&#34;fragment &#34; &gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;4&#34;&gt;
    &lt;img src=&#34;/img/eer_bars_in.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
 &lt;/span&gt;
 &lt;/div&gt;
@@ -368,6 +384,8 @@
 &lt;h2 id=&#34;questions&#34;&gt;Questions?&lt;/h2&gt;
 
 &lt;p&gt;Please email me at: &lt;code&gt;brij.srivastava@inria.fr&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Comprise project website: &lt;code&gt;https://www.compriseh2020.eu/&lt;/code&gt;&lt;/p&gt;
 
 &lt;div style=&#34;height: 10em;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
   &lt;img src=&#34;/img/namaste.jpeg&#34; style=&#34;border: none;&#34; /&gt;

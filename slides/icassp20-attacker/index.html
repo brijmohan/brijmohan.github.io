@@ -92,9 +92,10 @@
 <h2 id="context">Context</h2>
 
 <ul>
-<li>Because <em>Distinguishable</em> and <em>Repeatable</em> biometric references can be extracted from speech, speech data is private information and speech processing pose severe privacy threat</li>
-<li>Before publication, it must be <span class="red">anonymized</span> such that original speaker cannot be linked to the public anonymized dataset</li>
-<li>The anonymized data must be private as well as <span class="red">fit for use</span> in downstream tasks</li>
+<li><em>Distinguishable</em> and <em>Repeatable</em> biometric references can be extracted from speech</li>
+<li>Speech processing pose severe privacy threat</li>
+<li>Anonymization ensures that original speaker cannot be linked to the published anonymized dataset</li>
+<li>The anonymized data must be <span class="red">fit for use</span> in downstream tasks</li>
 </ul>
 
 
@@ -112,7 +113,7 @@
 
 <ul>
 <li>Compare anonymization using 3 voice conversion methods</li>
-<li>Propose framework to design different levels of knowledge for the <span class="red">attacker</span> w.r.t. the anonymization scheme/strategy:</li>
+<li>Propose framework to design different levels of knowledge for the <span class="red">attacker</span> w.r.t. the anonymization scheme/strategy</li>
 <li>Evaluation of <span class="red">privacy</span> and <span class="red">utility</span></li>
 </ul>
 
@@ -127,23 +128,29 @@
     
       
 
-<h2 id="threat-model">Threat model</h2>
+<h3 id="threat-model">Threat model</h3>
 
-<div style="font-size: 15pt; text-align: left; margin-left: 10em"> The <span class="red">speaker</span> publishes the speech dataset after anonymization</div>
-<div style="font-size: 15pt; text-align: left; margin-left: 10em"> The <span class="red">user</span> tries to use the anonymized public dataset for downstream tasks</div>
-<div style="font-size: 15pt; text-align: left; margin-left: 10em"> The <span class="red">attacker</span> tries to discover the identity of the speaker in a public dataset</div>
+<p><span class="fragment " data-fragment-index="1">
+   <div style="font-size: 16pt; text-align: left; margin-left: 10em"> The <span class="red">speaker</span> publishes the speech dataset after anonymization</div>
+</span>
+<span class="fragment " data-fragment-index="2">
+   <div style="font-size: 16pt; text-align: left; margin-left: 10em"> The <span class="red">user</span> tries to use the anonymized public dataset for downstream tasks</div>
+</span>
+<span class="fragment " data-fragment-index="3">
+   <div style="font-size: 16pt; text-align: left; margin-left: 10em"> The <span class="red">attacker</span> tries to discover the identity of the speaker in a public dataset</div>
+</span></p>
 
 <div style="width: 10em; height: 10em;"> 
-  <span class="fragment " >
+  <span class="fragment " data-fragment-index="1">
    <img src="/img/threat_model_ppt1_1.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
 </span>
-  <span class="fragment " >
+  <span class="fragment " data-fragment-index="2">
    <img src="/img/threat_model_ppt3_3.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
 </span>
-  <span class="fragment " >
+  <span class="fragment " data-fragment-index="3">
    <img src="/img/threat_model_ppt2_2.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
 </span>
-  <span class="fragment " >
+  <span class="fragment " data-fragment-index="4">
    <img src="/img/threat_model_ppt_full.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
 </span>
 </div>
@@ -172,14 +179,15 @@
     
       
 
-<h2 id="why-vc-based-anonymization">Why VC based anonymization?</h2>
+<h2 id="voice-conversion">Voice conversion</h2>
 
 <ul>
 <li>Logical speaker anonymization framework
 
 <ul>
 <li>Convert <span class="green">source</span> speaker&rsquo;s voice to a <span class="green">target</span> speaker</li>
-<li>Conversion may not be perfect and residual <span class="green">source</span> speaker information might be present, hence choice of <span class="green">target</span> speaker is critical for strength of anonymization</li>
+<li>Conversion may not be perfect, residual <span class="green">source</span> speaker info might be present</li>
+<li>Choice of <span class="green">target</span> speaker is critical for strength of anonymization</li>
 </ul></li>
 <li>Allows data publication</li>
 <li>First proposed in 2009 [2], many techniques proposed thereafter</li>
@@ -196,9 +204,11 @@
     
       
 
-<h2 id="three-vc-methods">Three VC methods</h2>
+<h2 id="vc-methods-criteria">VC methods: criteria</h2>
 
-<p>VC methods are selected based on the following criteria:</p>
+<blockquote>
+<div style="font-size: 20pt"> VC methods are selected based on the following criteria:</div>
+</blockquote>
 
 <ol>
 <li>Non-parallel</li>
@@ -217,12 +227,12 @@
     
       
 
-<h2 id="three-vc-methods-1">Three VC methods</h2>
+<h2 id="three-vc-methods">Three VC methods</h2>
 
 <ol>
 <li><span class="red">VoiceMask</span>: simple frequency warping based on composition of two functions $B$ and $Q$: $ f&rsquo; = B(Q(f, \alpha), \beta) $</li>
 <li><span class="red">Vocal Tract Length Normalization</span>: learn transformation parameters between source and target class spectra</li>
-<li><span class="red">Disentangled Speech Representation</span>: Separate encoders for <strong>content</strong> (instance normalization) and <strong>speaker</strong> (average pooling) information</li>
+<li><span class="red">Disentangled Speech Representation</span>: separate encoders for <strong>content</strong> (instance normalization) and <strong>speaker</strong> (average pooling) information</li>
 </ol>
 
 
@@ -328,7 +338,7 @@
 <h2 id="semi-informed-attacker">Semi-Informed attacker</h2>
 
 <div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
-  <img src="/img/semi_informed_attacker.svg" style="border: none; width: 30em; background: #ffffff" />
+  <img src="/img/semi_informed_attacker_1.svg" style="border: none; width: 30em; background: #ffffff" />
 </div>
 
 
@@ -345,7 +355,7 @@
 <h2 id="informed-attacker">Informed attacker</h2>
 
 <div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
-  <img src="/img/informed_attacker.svg" style="border: none; width: 30em; background: #ffffff" />
+  <img src="/img/informed_attacker_1.svg" style="border: none; width: 30em; background: #ffffff" />
 </div>
 
 
@@ -502,23 +512,29 @@
 
 <h3 id="results-on-privacy-eer">Results on privacy (EER)</h3>
 
-<ul style="font-size: 15pt">
-  <li>Informed attackers are not a realistic scenario but results show that speaker information can be discovered</li>
-  <li>Results are promising in Semi-Informed case, reasonable privacy protection can be provided</li>
-  <li>Target selection using <i>perm</i> strategy outperforms the rest</li>
+<ul style="font-size: 18pt">
+  <span class="fragment " data-fragment-index="3">
+   <li>Reasonable privacy protection can be provided in Semi-Informed case</li> 
+</span>
+  <span class="fragment " data-fragment-index="3">
+   <li><i>perm</i> strategy outperforms the rest</li> 
+</span>
+  <span class="fragment " data-fragment-index="4">
+   <li>Informed attacker show speaker information can be discovered, but not realistic</li> 
+</span>
 </ul>
 
 <div style="width: 10em; height: 10em"> 
-  <span class="fragment " >
+  <span class="fragment " data-fragment-index="1">
    <img src="/img/eer_bars_baseline.svg" style="border: none; position: absolute" />  
 </span>
-  <span class="fragment " >
+  <span class="fragment " data-fragment-index="2">
    <img src="/img/eer_bars_ig.svg" style="border: none; position: absolute" />  
 </span>
-  <span class="fragment " >
+  <span class="fragment " data-fragment-index="3">
    <img src="/img/eer_bars_si.svg" style="border: none; position: absolute" />  
 </span>
-  <span class="fragment " >
+  <span class="fragment " data-fragment-index="4">
    <img src="/img/eer_bars_in.svg" style="border: none; position: absolute" />  
 </span>
 </div>
@@ -637,6 +653,8 @@
 <h2 id="questions">Questions?</h2>
 
 <p>Please email me at: <code>brij.srivastava@inria.fr</code></p>
+
+<p>Comprise project website: <code>https://www.compriseh2020.eu/</code></p>
 
 <div style="height: 10em;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
   <img src="/img/namaste.jpeg" style="border: none;" />
