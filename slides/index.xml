@@ -43,7 +43,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Distinguishable&lt;/em&gt; and &lt;em&gt;Repeatable&lt;/em&gt; biometric references can be extracted from speech&lt;/li&gt;
-&lt;li&gt;Speech processing pose severe privacy threat&lt;/li&gt;
+&lt;li&gt;Speech processing raises privacy threats&lt;/li&gt;
 &lt;li&gt;Anonymization ensures that original speaker cannot be linked to the published anonymized dataset&lt;/li&gt;
 &lt;li&gt;The anonymized data must be &lt;span class=&#34;red&#34;&gt;fit for use&lt;/span&gt; in downstream tasks&lt;/li&gt;
 &lt;/ul&gt;
@@ -53,8 +53,9 @@
 &lt;h2 id=&#34;contributions&#34;&gt;Contributions&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Compare anonymization using 3 voice conversion methods&lt;/li&gt;
-&lt;li&gt;Propose framework to design different levels of knowledge for the &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt; w.r.t. the anonymization scheme/strategy&lt;/li&gt;
+&lt;li&gt;Compare 3 anonymization methods based on voice conversion&lt;/li&gt;
+&lt;li&gt;Definition of &lt;span class=&#34;green&#34;&gt;target&lt;/span&gt; voice selection strategies&lt;/li&gt;
+&lt;li&gt;Characterization of &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt;&amp;rsquo;s knowledge about the anonymization scheme&lt;/li&gt;
 &lt;li&gt;Evaluation of &lt;span class=&#34;red&#34;&gt;privacy&lt;/span&gt; and &lt;span class=&#34;red&#34;&gt;utility&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -62,28 +63,32 @@
 
 &lt;h3 id=&#34;threat-model&#34;&gt;Threat model&lt;/h3&gt;
 
-&lt;p&gt;&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
-   &lt;div style=&#34;font-size: 16pt; text-align: left; margin-left: 10em&#34;&gt; The &lt;span class=&#34;red&#34;&gt;speaker&lt;/span&gt; publishes the speech dataset after anonymization&lt;/div&gt;
+&lt;div style=&#34;float: left; margin-left: -6em; width: 18em; text-align: left; font-size: 26pt; padding: 1em&#34;&gt;
+&lt;ul&gt;
+&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
+   &lt;li&gt; The &lt;span class=&#34;red&#34;&gt;speaker&lt;/span&gt; publishes the speech data after anonymization&lt;/li&gt; 
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
-   &lt;div style=&#34;font-size: 16pt; text-align: left; margin-left: 10em&#34;&gt; The &lt;span class=&#34;red&#34;&gt;user&lt;/span&gt; tries to use the anonymized public dataset for downstream tasks&lt;/div&gt;
+   &lt;li&gt; The &lt;span class=&#34;red&#34;&gt;user&lt;/span&gt; tries to use the anonymized public data for downstream tasks&lt;/li&gt; 
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
-   &lt;div style=&#34;font-size: 16pt; text-align: left; margin-left: 10em&#34;&gt; The &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt; tries to discover the identity of the speaker in a public dataset&lt;/div&gt;
-&lt;/span&gt;&lt;/p&gt;
+   &lt;li&gt; The &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt; tries to discover the identity of the speaker in the public data&lt;/li&gt; 
+&lt;/span&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 
 &lt;div style=&#34;width: 10em; height: 10em;&#34;&gt; 
   &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
-   &lt;img src=&#34;/img/threat_model_ppt1_1.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
+   &lt;img src=&#34;/img/threat_model_speaker.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
 &lt;/span&gt;
   &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
-   &lt;img src=&#34;/img/threat_model_ppt3_3.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
+   &lt;img src=&#34;/img/threat_model_user.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
 &lt;/span&gt;
   &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
-   &lt;img src=&#34;/img/threat_model_ppt2_2.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
+   &lt;img src=&#34;/img/threat_model_attacker.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
 &lt;/span&gt;
   &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;4&#34;&gt;
-   &lt;img src=&#34;/img/threat_model_ppt_full.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
+   &lt;img src=&#34;/img/threat_model_all.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
 &lt;/span&gt;
 &lt;/div&gt;
 
@@ -133,7 +138,7 @@
 
 &lt;hr /&gt;
 
-&lt;h1 id=&#34;modeling&#34;&gt;Modeling&lt;/h1&gt;
+&lt;h2 id=&#34;anonymization-model&#34;&gt;Anonymization Model&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -180,7 +185,7 @@
 &lt;h2 id=&#34;semi-informed-attacker&#34;&gt;Semi-Informed attacker&lt;/h2&gt;
 
 &lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
-  &lt;img src=&#34;/img/semi_informed_attacker_1.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
+  &lt;img src=&#34;/img/semi_informed_attacker.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
@@ -188,7 +193,7 @@
 &lt;h2 id=&#34;informed-attacker&#34;&gt;Informed attacker&lt;/h2&gt;
 
 &lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
-  &lt;img src=&#34;/img/informed_attacker_1.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
+  &lt;img src=&#34;/img/informed_attacker.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
 &lt;/div&gt;
 
 &lt;hr /&gt;
@@ -225,15 +230,15 @@
         &lt;tr&gt;
         &lt;td&gt;VTLN&lt;/td&gt;
         &lt;td rowspan=3&gt;LibriSpeech 460h&lt;/td&gt;
-        &lt;td&gt;Speech frames are clustered in unsupervised manner using k-means (8 centroids), and transformation paramters are learnt&lt;/td&gt;
+        &lt;td&gt;K-means clusters (8 centroids) and transformation paramters are learnt&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
         &lt;td&gt;Attackers&lt;/td&gt;
-            &lt;td&gt;Simulated using x-vector + PLDA based speaker verification system. Training data is anonymized to induce &#34;knowledge&#34; of anonymization&lt;/td&gt;
+            &lt;td&gt;Anonymized training data to induce &#34;knowledge&#34; of anonymization&lt;/td&gt;
         &lt;/tr&gt;
         &lt;tr&gt;
         &lt;td&gt;ASR for evaluation&lt;/td&gt;
-        &lt;td&gt;End-to-End ASR is trained with encoder composed of VGG+BLSTM network and hybrid CTC + Attention decoder&lt;/td&gt;
+        &lt;td&gt;End-to-End (CTC + Attention) ASR is trained&lt;/td&gt;
         &lt;/tr&gt;
     &lt;tr&gt;&lt;/tr&gt;
     &lt;/tbody&gt;
@@ -291,19 +296,7 @@
 
 &lt;h3 id=&#34;results-on-privacy-eer&#34;&gt;Results on privacy (EER)&lt;/h3&gt;
 
-&lt;ul style=&#34;font-size: 18pt&#34;&gt;
-  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
-   &lt;li&gt;Reasonable privacy protection can be provided in Semi-Informed case&lt;/li&gt; 
-&lt;/span&gt;
-  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
-   &lt;li&gt;&lt;i&gt;perm&lt;/i&gt; strategy outperforms the rest&lt;/li&gt; 
-&lt;/span&gt;
-  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;4&#34;&gt;
-   &lt;li&gt;Informed attacker show speaker information can be discovered, but not realistic&lt;/li&gt; 
-&lt;/span&gt;
-&lt;/ul&gt;
-
-&lt;div style=&#34;width: 10em; height: 10em&#34;&gt; 
+&lt;div style=&#34;width: 10em; height: 10em; float: left; margin-left: -6em&#34;&gt; 
   &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
    &lt;img src=&#34;/img/eer_bars_baseline.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
 &lt;/span&gt;
@@ -318,12 +311,26 @@
 &lt;/span&gt;
 &lt;/div&gt;
 
+&lt;div style=&#34;float: right; margin-left: 14em; position: absolute; width: 13em&#34;&gt;
+  &lt;ul style=&#34;font-size: 24pt; padding: 1em&#34;&gt;
+    &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;li&gt;Reasonable privacy protection can be provided in Semi-Informed case&lt;/li&gt; 
+&lt;/span&gt;
+    &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;li&gt;&lt;i&gt;perm&lt;/i&gt; strategy outperforms the rest&lt;/li&gt; 
+&lt;/span&gt;
+    &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;4&#34;&gt;
+   &lt;li&gt;Informed attacker shows speaker information can be discovered, but not realistic&lt;/li&gt; 
+&lt;/span&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
 &lt;hr /&gt;
 
 &lt;h2 id=&#34;plda-score-distribution&#34;&gt;PLDA score distribution&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;More overlap between the score distribution ensures more privacy&lt;/li&gt;
+&lt;li&gt;More overlap between the score distributions ensures more privacy&lt;/li&gt;
 &lt;li&gt;Overlap decreases as we move from &lt;em&gt;Ignorant&lt;/em&gt; to &lt;em&gt;Informed&lt;/em&gt; attacker&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -335,12 +342,14 @@
 
 &lt;h3 id=&#34;results-on-utility-wer&#34;&gt;Results on utility (WER)&lt;/h3&gt;
 
-&lt;div style=&#34;font-size: 20pt&#34;&gt;
-- With rise in WER, utility decreases for all VC algorithms &lt;br /&gt;
-- VoiceMask and VTLN produce reasonable loss of utility
+&lt;div style=&#34;font-size: 30pt; float: right; width: 16em; padding: 2em;&#34;&gt;
+  &lt;ul style=&#34;margin-left: 10em; width: 10em&#34;&gt;
+    &lt;li&gt;With rise in WER, utility decreases for all VC algorithms&lt;/li&gt;
+    &lt;li&gt;VoiceMask and VTLN produce reasonable loss of utility&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
+&lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1); float: left; position: absolute&#34;&gt; 
   &lt;img src=&#34;/img/wer_bars.svg&#34; style=&#34;border: none;&#34; /&gt;
 &lt;/div&gt;
 
@@ -350,40 +359,9 @@
 
 &lt;ul&gt;
 &lt;li&gt;Investigated VC algorithms for speaker anonymization&lt;/li&gt;
-&lt;li&gt;We show that &lt;span class=&#34;green&#34;&gt;target selection&lt;/span&gt; and &lt;span class=&#34;green&#34;&gt;attacker&amp;rsquo;s knowledge&lt;/span&gt; are critical for strength of anonymization&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;green&#34;&gt;Target selection&lt;/span&gt; and &lt;span class=&#34;green&#34;&gt;attacker&amp;rsquo;s knowledge&lt;/span&gt; are critical for strength of anonymization&lt;/li&gt;
 &lt;li&gt;Simple methods can provide reasonable protection&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;future-directions&#34;&gt;Future directions&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Search for speaker anonymization which produces &lt;span class=&#34;red&#34;&gt;high EER&lt;/span&gt;, even in &lt;em&gt;Informed&lt;/em&gt; attack scenario&lt;/li&gt;
-&lt;li&gt;Explore cross-gender anonymization&lt;/li&gt;
-&lt;li&gt;Analyse the PLDA scores using other metrics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Can we steal your vocal identity from the internet?: Initial investigation of cloning Obama’s voice using GAN, WaveNet and low-quality found data,” in Proc. Odyssey 2018&lt;/li&gt;
-&lt;li&gt;Jin et al, &amp;ldquo;Speaker de-identification via voice transformation&amp;rdquo;, ASRU 2009&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;questions&#34;&gt;Questions?&lt;/h2&gt;
-
-&lt;p&gt;Please email me at: &lt;code&gt;brij.srivastava@inria.fr&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Comprise project website: &lt;code&gt;https://www.compriseh2020.eu/&lt;/code&gt;&lt;/p&gt;
-
-&lt;div style=&#34;height: 10em;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
-  &lt;img src=&#34;/img/namaste.jpeg&#34; style=&#34;border: none;&#34; /&gt;
-&lt;/div&gt;
 </description>
     </item>
     
