@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sunayana Sitaram | Brij Mohan Lal Srivastava</title>
-    <link>/authors/sunayana-sitaram/</link>
-      <atom:link href="/authors/sunayana-sitaram/index.xml" rel="self" type="application/rss+xml" />
-    <description>Sunayana Sitaram</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 02 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <title>Ayushi Pandey | Brij Mohan Lal Srivastava</title>
+    <link>/authors/ayushi-pandey/</link>
+      <atom:link href="/authors/ayushi-pandey/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ayushi Pandey</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 07 May 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
-      <title>Sunayana Sitaram</title>
-      <link>/authors/sunayana-sitaram/</link>
+      <title>Ayushi Pandey</title>
+      <link>/authors/ayushi-pandey/</link>
     </image>
     
     <item>
-      <title>Homophone Identification and Merging for Code-switched Speech Recognition</title>
-      <link>/publication/homophone-is18/</link>
-      <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/homophone-is18/</guid>
+      <title>Phonetically Balanced Code-Mixed Speech Corpus for Hindi-English Automatic Speech Recognition</title>
+      <link>/publication/pbcm-lrec18/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/pbcm-lrec18/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
