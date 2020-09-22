@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 25 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
       <description>&lt;p&gt;I am a PhD student at Inria working in the &lt;a href=&#34;https://team.inria.fr/magnet/&#34; target=&#34;_blank&#34;&gt;Magnet&lt;/a&gt; and &lt;a href=&#34;https://team.inria.fr/multispeech/&#34; target=&#34;_blank&#34;&gt;Multispeech&lt;/a&gt; team. I am supervised by &lt;a href=&#34;http://researchers.lille.inria.fr/abellet/&#34; target=&#34;_blank&#34;&gt;Dr. Aurélien Bellet&lt;/a&gt;, &lt;a href=&#34;https://members.loria.fr/EVincent/&#34; target=&#34;_blank&#34;&gt;Dr. Emmanuel Vincent&lt;/a&gt; and &lt;a href=&#34;http://researchers.lille.inria.fr/tommasi/&#34; target=&#34;_blank&#34;&gt;Dr. Marc Tommasi&lt;/a&gt;. My work mainly focuses towards privacy-preserving speech processing.&lt;/p&gt;
 
@@ -24,9 +24,17 @@
     </item>
     
     <item>
+      <title>Andreas Nautsch</title>
+      <link>/authors/andreas-nautsch/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/andreas-nautsch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Aurélien Bellet</title>
       <link>/authors/aurelien-bellet/</link>
-      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/authors/aurelien-bellet/</guid>
       <description></description>
     </item>
@@ -34,16 +42,96 @@
     <item>
       <title>Emmanuel Vincent</title>
       <link>/authors/emmanuel-vincent/</link>
-      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/authors/emmanuel-vincent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jean-François Bonastre</title>
+      <link>/authors/jean-francois-bonastre/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jean-francois-bonastre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jose Patino</title>
+      <link>/authors/jose-patino/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jose-patino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Junichi Yamagishi</title>
+      <link>/authors/junichi-yamagishi/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/junichi-yamagishi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Marc Tommasi</title>
       <link>/authors/marc-tommasi/</link>
-      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/authors/marc-tommasi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Massimiliano Todisco</title>
+      <link>/authors/massimiliano-todisco/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/massimiliano-todisco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mohamed Maouche</title>
+      <link>/authors/mohamed-maouche/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/mohamed-maouche/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Natalia Tomashenko</title>
+      <link>/authors/natalia-tomashenko/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/natalia-tomashenko/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nathalie Vauquier</title>
+      <link>/authors/nathalie-vauquier/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/nathalie-vauquier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nicholas Evans</title>
+      <link>/authors/nicholas-evans/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/nicholas-evans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paul-Gauthier Noé</title>
+      <link>/authors/paul-gauthier-noe/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/paul-gauthier-noe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xin Wang</title>
+      <link>/authors/xin-wang/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/xin-wang/</guid>
       <description></description>
     </item>
     
@@ -52,14 +140,6 @@
       <link>/authors/md-sahidullah/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/authors/md-sahidullah/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nathalie Vauquier</title>
-      <link>/authors/nathalie-vauquier/</link>
-      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/nathalie-vauquier/</guid>
       <description></description>
     </item>
     
