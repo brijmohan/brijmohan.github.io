@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Brij Mohan Lal Srivastava</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023</copyright><lastBuildDate>Sat, 26 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Latest:&lt;/strong&gt; With the support of Inria and Euratechnologies, I have decided to take voice anonymization to society at large in the form of &lt;a href=&#34;http://nijta.com/&#34; target=&#34;_blank&#34;&gt;Nijta&lt;/a&gt;, a deeptech startup based in Lille. If you are interested to know more and try the solutions provided by &lt;a href=&#34;http://nijta.com/&#34; target=&#34;_blank&#34;&gt;Nijta&lt;/a&gt;, send me an email at the address given at the end of this page, and I promise to contact you soon.&lt;/p&gt;
+
+&lt;p&gt;I recently finished my PhD at Inria where I worked in the &lt;a href=&#34;https://team.inria.fr/magnet/&#34; target=&#34;_blank&#34;&gt;Magnet&lt;/a&gt; and the &lt;a href=&#34;https://team.inria.fr/multispeech/&#34; target=&#34;_blank&#34;&gt;Multispeech&lt;/a&gt; teams. I was supervised by &lt;a href=&#34;http://researchers.lille.inria.fr/abellet/&#34; target=&#34;_blank&#34;&gt;Dr. Aurélien Bellet&lt;/a&gt;, &lt;a href=&#34;https://members.loria.fr/EVincent/&#34; target=&#34;_blank&#34;&gt;Dr. Emmanuel Vincent&lt;/a&gt; and &lt;a href=&#34;http://researchers.lille.inria.fr/tommasi/&#34; target=&#34;_blank&#34;&gt;Prof. Marc Tommasi&lt;/a&gt;. My work mainly focused towards privacy-preserving speech processing.&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&#34;https://www.voiceprivacychallenge.org/&#34; target=&#34;_blank&#34;&gt;Voice Privacy Challenge&lt;/a&gt; to know more about the privacy benchmarks we obtained using our baseline and participate to evaluate your own anonymization methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ali Shahin Shamsabadi</title>
+      <link>/authors/ali-shahin-shamsabadi/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/ali-shahin-shamsabadi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aurélien Bellet</title>
+      <link>/authors/aurelien-bellet/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/aurelien-bellet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emmanuel Vincent</title>
+      <link>/authors/emmanuel-vincent/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/emmanuel-vincent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marc Tommasi</title>
+      <link>/authors/marc-tommasi/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/marc-tommasi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mohamed Maouche</title>
+      <link>/authors/mohamed-maouche/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/mohamed-maouche/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nathalie Vauquier</title>
+      <link>/authors/nathalie-vauquier/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/nathalie-vauquier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nicolas Papernot</title>
+      <link>/authors/nicolas-papernot/</link>
+      <pubDate>Sat, 26 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/nicolas-papernot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anaïs Chanclu</title>
+      <link>/authors/anais-chanclu/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/anais-chanclu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andreas Nautsch</title>
+      <link>/authors/andreas-nautsch/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/andreas-nautsch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Benjamin O&#39;Brien</title>
+      <link>/authors/benjamin-obrien/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/benjamin-obrien/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jean-François Bonastre</title>
+      <link>/authors/jean-francois-bonastre/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/jean-francois-bonastre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jose Patino</title>
+      <link>/authors/jose-patino/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/jose-patino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Junichi Yamagishi</title>
+      <link>/authors/junichi-yamagishi/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/junichi-yamagishi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Massimiliano Todisco</title>
+      <link>/authors/massimiliano-todisco/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/massimiliano-todisco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Natalia Tomashenko</title>
+      <link>/authors/natalia-tomashenko/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/natalia-tomashenko/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nicholas Evans</title>
+      <link>/authors/nicholas-evans/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/nicholas-evans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paul-Gauthier Noé</title>
+      <link>/authors/paul-gauthier-noe/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/paul-gauthier-noe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xin Wang</title>
+      <link>/authors/xin-wang/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/authors/xin-wang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Md Sahidullah</title>
+      <link>/authors/md-sahidullah/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/md-sahidullah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brij Mohan Lal Srivastava</title>
+      <link>/authors/brij-mohan-lal-srivastava/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/brij-mohan-lal-srivastava/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sunayana Sitaram</title>
+      <link>/authors/sunayana-sitaram/</link>
+      <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/sunayana-sitaram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ayushi Pandey</title>
+      <link>/authors/ayushi-pandey/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/ayushi-pandey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bhanu Teja Nellore</title>
+      <link>/authors/bhanu-teja-nellore/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/bhanu-teja-nellore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kasi Sai Teja</title>
+      <link>/authors/kasi-sai-teja/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/kasi-sai-teja/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rohit Kumar</title>
+      <link>/authors/rohit-kumar/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/rohit-kumar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Suryakanth V Gangashetty</title>
+      <link>/authors/suryakanth-v-gangashetty/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/suryakanth-v-gangashetty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anil Kumar Vuppala</title>
+      <link>/authors/anil-kumar-vuppala/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/anil-kumar-vuppala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hari Krishna Vydana</title>
+      <link>/authors/hari-krishna-vydana/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/hari-krishna-vydana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manish Shrivastava</title>
+      <link>/authors/manish-shrivastava/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/manish-shrivastava/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brij Mohan Lal Srivastava</title>
+    <link>/authors/brij-mohan-lal-srivastava/</link>
+      <atom:link href="/authors/brij-mohan-lal-srivastava/index.xml" rel="self" type="application/rss+xml" />
+    <description>Brij Mohan Lal Srivastava</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023</copyright><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Brij Mohan Lal Srivastava</title>
+      <link>/authors/brij-mohan-lal-srivastava/</link>
+    </image>
+    
+    <item>
+      <title>Evaluating Voice Conversion based Privacy Protection against Informed Attackers</title>
+      <link>/slides/icassp20-attacker/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/slides/icassp20-attacker/</guid>
+      <description>
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/anonymous.jpg&#34;
+  &gt;
+
+
+&lt;div style=&#34;text-align: left;&#34;&gt; 
+  &lt;img src=&#34;/img/partner-inria.png&#34; style=&#34;border: none; width: 150px; background: #000000;&#34; /&gt; 
+  &lt;img src=&#34;/img/ulille2.svg&#34; style=&#34;border: none; width: 150px; background: #000000;&#34; /&gt;
+  &lt;img src=&#34;/img/logo-comprise-black-crop.png&#34; style=&#34;border: none; width: 70px; background: #000000;&#34; /&gt;
+  &lt;img src=&#34;/img/europe-crop.png&#34; style=&#34;border: none; width: 100px; background: #000000;&#34; /&gt;
+  &lt;img src=&#34;/img/anr.png&#34; style=&#34;border: none; width: 150px; background: #000000;&#34; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;div-style-text-align-left-evaluating-voice-conversion-based-privacy-protection-against-informed-attackers-div&#34;&gt;&lt;div style=&#34;text-align: left;&#34;&gt; Evaluating Voice Conversion based Privacy Protection against Informed Attackers &lt;/div&gt;&lt;/h2&gt;
+
+&lt;h6 id=&#34;div-style-text-align-left-brij-mohan-lal-srivastava-nathalie-vauquier-md-sahidullah-aurélien-bellet-marc-tommasi-and-emmanuel-vincent-div&#34;&gt;&lt;div style=&#34;text-align: left;&#34;&gt; Brij Mohan Lal Srivastava, Nathalie Vauquier, Md Sahidullah, Aurélien Bellet, Marc Tommasi and Emmanuel Vincent &lt;/div&gt;&lt;/h6&gt;
+
+&lt;div style=&#34;text-align: left;&#34;&gt; 
+  &lt;img src=&#34;/img/icassp.png&#34; style=&#34;border: none; width: 200px; background: #000000&#34; /&gt; 
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;context&#34;&gt;Context&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Distinguishable&lt;/em&gt; and &lt;em&gt;Repeatable&lt;/em&gt; biometric references can be extracted from speech&lt;/li&gt;
+&lt;li&gt;Speech processing raises privacy threats&lt;/li&gt;
+&lt;li&gt;Anonymization ensures that original speaker cannot be linked to the published anonymized dataset&lt;/li&gt;
+&lt;li&gt;The anonymized data must be &lt;span class=&#34;red&#34;&gt;fit for use&lt;/span&gt; in downstream tasks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;contributions&#34;&gt;Contributions&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Compare 3 anonymization methods based on voice conversion&lt;/li&gt;
+&lt;li&gt;Definition of &lt;span class=&#34;green&#34;&gt;target&lt;/span&gt; voice selection strategies&lt;/li&gt;
+&lt;li&gt;Characterization of &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt;&amp;rsquo;s knowledge about the anonymization scheme&lt;/li&gt;
+&lt;li&gt;Evaluation of &lt;span class=&#34;red&#34;&gt;privacy&lt;/span&gt; and &lt;span class=&#34;red&#34;&gt;utility&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;threat-model&#34;&gt;Threat model&lt;/h3&gt;
+
+&lt;div style=&#34;float: left; margin-left: -3em; width: 13em; text-align: left; font-size: 26pt; padding: 1em&#34;&gt;
+&lt;ul&gt;
+&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
+   &lt;li&gt; The &lt;span class=&#34;red&#34;&gt;speaker&lt;/span&gt; publishes the speech data after anonymization&lt;/li&gt; 
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
+   &lt;li&gt; The &lt;span class=&#34;red&#34;&gt;user&lt;/span&gt; tries to use the anonymized public data for downstream tasks&lt;/li&gt; 
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;li&gt; The &lt;span class=&#34;red&#34;&gt;attacker&lt;/span&gt; tries to discover the identity of the speaker in the public data&lt;/li&gt; 
+&lt;/span&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;width: 0em; height: 10em;&#34;&gt; 
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
+   &lt;img src=&#34;/img/threat_model_speaker.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
+   &lt;img src=&#34;/img/threat_model_user.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;img src=&#34;/img/threat_model_attacker.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;4&#34;&gt;
+   &lt;img src=&#34;/img/threat_model_all.svg&#34; style=&#34;border: none; position: absolute; background: #ffffff; width: 13em&#34; /&gt;  
+&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;voice-conversion-based-anonymization&#34;&gt;Voice conversion based anonymization&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;voice-conversion&#34;&gt;Voice conversion&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Logical speaker anonymization framework
+
+&lt;ul&gt;
+&lt;li&gt;Convert &lt;span class=&#34;green&#34;&gt;source&lt;/span&gt; speaker&amp;rsquo;s voice to a &lt;span class=&#34;green&#34;&gt;target&lt;/span&gt; speaker&lt;/li&gt;
+&lt;li&gt;Conversion may not be perfect, residual &lt;span class=&#34;green&#34;&gt;source&lt;/span&gt; speaker info might be present&lt;/li&gt;
+&lt;li&gt;Choice of &lt;span class=&#34;green&#34;&gt;target&lt;/span&gt; speaker is critical for strength of anonymization&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Allows data publication&lt;/li&gt;
+&lt;li&gt;First proposed in 2009 [2], many techniques proposed thereafter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;vc-methods-criteria&#34;&gt;VC methods: criteria&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;div style=&#34;font-size: 20pt&#34;&gt; VC methods are selected based on the following criteria:&lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Non-parallel&lt;/li&gt;
+&lt;li&gt;Many-to-many&lt;/li&gt;
+&lt;li&gt;Source/language independent&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;three-vc-methods&#34;&gt;Three VC methods&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;VoiceMask&lt;/span&gt;: simple frequency warping based on composition of two functions $B$ and $Q$: $ f&amp;rsquo; = B(Q(f, \alpha), \beta) $&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Vocal Tract Length Normalization&lt;/span&gt;: learn transformation parameters between source and target class spectra&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;red&#34;&gt;Disentangled Speech Representation&lt;/span&gt;: separate encoders for &lt;strong&gt;content&lt;/strong&gt; (instance normalization) and &lt;strong&gt;speaker&lt;/strong&gt; (average pooling) information&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;anonymization-model&#34;&gt;Anonymization Model&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;anonymization-framework&#34;&gt;Anonymization framework&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;div style=&#34;font-size: 20pt&#34;&gt; The &lt;span class=&#34;red&#34;&gt;target&lt;/span&gt; can be a single speaker from the pool or an average of many speakers.&lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
+  &lt;img src=&#34;/img/anon_scheme.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;target-selection-strategies&#34;&gt;Target selection strategies&lt;/h2&gt;
+
+&lt;div style=&#34;width: 40em; height: 8em; margin-left: -8em; box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/sconst.png&#34; style=&#34;border: none; width: 8em&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/sperm.png&#34; style=&#34;border: none; width: 8em&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; &gt;
+   &lt;img src=&#34;/img/srand.png&#34; style=&#34;border: none; width: 8em&#34; /&gt;  
+&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;design-of-attackers&#34;&gt;Design of Attackers&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;ignorant-attacker&#34;&gt;Ignorant attacker&lt;/h2&gt;
+
+&lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
+  &lt;img src=&#34;/img/ignorant_attacker.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;semi-informed-attacker&#34;&gt;Semi-Informed attacker&lt;/h2&gt;
+
+&lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
+  &lt;img src=&#34;/img/semi_informed_attacker.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;informed-attacker&#34;&gt;Informed attacker&lt;/h2&gt;
+
+&lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
+  &lt;img src=&#34;/img/informed_attacker.svg&#34; style=&#34;border: none; width: 30em; background: #ffffff&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;experiments&#34;&gt;Experiments&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;training-data&#34;&gt;Training data&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;div style=&#34;font-size: 15pt&#34;&gt; All the data subsets are derived from LibriSpeech corpus. &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;table style=&#34;font-size: 17pt&#34;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Component&lt;/th&gt;
+            &lt;th&gt;Dataset&lt;/th&gt;
+            &lt;th&gt;Training&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;VoiceMask&lt;/td&gt;
+        &lt;td&gt;None&lt;/td&gt;
+        &lt;td&gt;No training required, ($\alpha$, $\beta$ are selected randomly from a predefined range)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Disentangled VC&lt;/td&gt;
+        &lt;td&gt;LibriTTS 100h&lt;/td&gt;
+        &lt;td&gt;(Content, Speaker) encoders are trained end-to-end to reconstruct the speech waveform&lt;/td&gt;
+    &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;VTLN&lt;/td&gt;
+        &lt;td rowspan=3&gt;LibriSpeech 460h&lt;/td&gt;
+        &lt;td&gt;K-means clusters (8 centroids) and transformation paramters are learnt&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;Attackers&lt;/td&gt;
+            &lt;td&gt;Anonymized training data to induce &#34;knowledge&#34; of anonymization&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;ASR for evaluation&lt;/td&gt;
+        &lt;td&gt;End-to-End (CTC + Attention) ASR is trained&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;tr&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;evaluation-data&#34;&gt;Evaluation data&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Male&lt;/th&gt;
+&lt;th&gt;Female&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;#Speakers&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Genuine trials&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;449&lt;/td&gt;
+&lt;td&gt;548&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Impostor trials&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;9457&lt;/td&gt;
+&lt;td&gt;11,196&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;evaluation-protocol&#34;&gt;Evaluation protocol&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Attackers are simulated using speaker verification, which produce PLDA scores&lt;/li&gt;
+&lt;li&gt;Measure of &lt;span class=&#34;red&#34;&gt;privacy&lt;/span&gt;: Equal Error Rate (&lt;span class=&#34;green&#34;&gt;EER&lt;/span&gt;) computed using PLDA scores&lt;/li&gt;
+&lt;li&gt;Measure of &lt;span class=&#34;red&#34;&gt;utility&lt;/span&gt;: Word Error Rate (&lt;span class=&#34;green&#34;&gt;WER&lt;/span&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;results-on-privacy-eer&#34;&gt;Results on privacy (EER)&lt;/h3&gt;
+
+&lt;div style=&#34;width: 10em; height: 10em; float: left; margin-left: -6em&#34;&gt; 
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;1&#34;&gt;
+   &lt;img src=&#34;/img/eer_bars_baseline.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;2&#34;&gt;
+   &lt;img src=&#34;/img/eer_bars_ig.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;img src=&#34;/img/eer_bars_si.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
+&lt;/span&gt;
+  &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;4&#34;&gt;
+   &lt;img src=&#34;/img/eer_bars_in.svg&#34; style=&#34;border: none; position: absolute&#34; /&gt;  
+&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;float: right; margin-left: 14em; position: absolute; width: 11em&#34;&gt;
+  &lt;ul style=&#34;font-size: 22pt; padding: 1em&#34;&gt;
+    &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;li&gt;Reasonable privacy protection can be provided in Semi-Informed case&lt;/li&gt; 
+&lt;/span&gt;
+    &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;3&#34;&gt;
+   &lt;li&gt;&lt;i&gt;perm&lt;/i&gt; strategy outperforms the rest&lt;/li&gt; 
+&lt;/span&gt;
+    &lt;span class=&#34;fragment &#34; data-fragment-index=&#34;4&#34;&gt;
+   &lt;li&gt;Informed attacker shows speaker information can be discovered, but not realistic&lt;/li&gt; 
+&lt;/span&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;plda-score-distribution&#34;&gt;PLDA score distribution&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;More overlap between the score distributions ensures more privacy&lt;/li&gt;
+&lt;li&gt;Overlap decreases as we move from &lt;em&gt;Ignorant&lt;/em&gt; to &lt;em&gt;Informed&lt;/em&gt; attacker&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);&#34;&gt; 
+  &lt;img src=&#34;/img/score_dist.svg&#34; style=&#34;border: none; width: 40em&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;results-on-utility-wer&#34;&gt;Results on utility (WER)&lt;/h3&gt;
+
+&lt;div style=&#34;font-size: 24pt; float: right; width: 18em; padding: 2em;&#34;&gt;
+  &lt;ul style=&#34;margin-left: 10em; width: 10em&#34;&gt;
+    &lt;li&gt;With rise in WER, utility decreases for all VC algorithms&lt;/li&gt;
+    &lt;li&gt;VoiceMask and VTLN produce reasonable loss of utility&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div style=&#34;box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1); float: left; position: absolute&#34;&gt; 
+  &lt;img src=&#34;/img/wer_bars.svg&#34; style=&#34;border: none;&#34; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Investigated VC algorithms for speaker anonymization&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;green&#34;&gt;Target selection&lt;/span&gt; and &lt;span class=&#34;green&#34;&gt;attacker&amp;rsquo;s knowledge&lt;/span&gt; are critical for strength of anonymization&lt;/li&gt;
+&lt;li&gt;Simple methods can provide reasonable protection&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

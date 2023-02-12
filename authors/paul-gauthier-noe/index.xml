@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paul-Gauthier Noé | Brij Mohan Lal Srivastava</title>
+    <link>/authors/paul-gauthier-noe/</link>
+      <atom:link href="/authors/paul-gauthier-noe/index.xml" rel="self" type="application/rss+xml" />
+    <description>Paul-Gauthier Noé</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023</copyright><lastBuildDate>Wed, 16 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Paul-Gauthier Noé</title>
+      <link>/authors/paul-gauthier-noe/</link>
+    </image>
+    
+    <item>
+      <title>The VoicePrivacy 2020 Challenge: Results and findings</title>
+      <link>/publication/vpc-csl-2022/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/publication/vpc-csl-2022/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Supplementary material can be accessed at the following link in &lt;a href=&#34;https://hal.archives-ouvertes.fr/hal-03335126&#34; target=&#34;_blank&#34;&gt;HAL&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing the VoicePrivacy initiative</title>
+      <link>/publication/vpc-initiative-is20/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/vpc-initiative-is20/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

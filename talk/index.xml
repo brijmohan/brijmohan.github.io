@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks | Brij Mohan Lal Srivastava</title>
+    <link>/talk/</link>
+      <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023</copyright><lastBuildDate>Thu, 02 Dec 2021 10:30:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>/talk/</link>
+    </image>
+    
+    <item>
+      <title>Speaker Anonymization -- Representation, Evaluation and Formal Guarantees</title>
+      <link>/talk/phd_defense/</link>
+      <pubDate>Thu, 02 Dec 2021 10:30:00 +0000</pubDate>
+      <guid>/talk/phd_defense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent approaches towards Speaker Anonymization</title>
+      <link>/talk/eab_rpc_sep2020/</link>
+      <pubDate>Tue, 15 Sep 2020 15:10:00 +0000</pubDate>
+      <guid>/talk/eab_rpc_sep2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy in Speech Processing</title>
+      <link>/talk/lium_jan2020/</link>
+      <pubDate>Fri, 24 Jan 2020 11:00:00 +0000</pubDate>
+      <guid>/talk/lium_jan2020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

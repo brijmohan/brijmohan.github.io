@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/courses/example/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/example/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/example/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/admin/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/1/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/ali-shahin-shamsabadi/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/aurelien-bellet/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/dpspeech-2022/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/emmanuel-vincent/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/marc-tommasi/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/mohamed-maouche/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nathalie-vauquier/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nicolas-papernot/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/privacy/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2022-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/anais-chanclu/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/andreas-nautsch/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/benjamin-obrien/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/jean-francois-bonastre/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/jose-patino/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/junichi-yamagishi/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/massimiliano-todisco/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/natalia-tomashenko/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nicholas-evans/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/paul-gauthier-noe/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/vpc-csl-2022/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/xin-wang/</loc>
+    <lastmod>2022-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2021-12-02T10:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/phd_defense/</loc>
+    <lastmod>2021-12-02T10:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/metrics-is20/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/design-choices-is20/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/vpc-initiative-is20/</loc>
+    <lastmod>2020-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/eab_rpc_sep2020/</loc>
+    <lastmod>2020-09-15T15:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/lium_jan2020/</loc>
+    <lastmod>2020-01-24T11:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/attacker-icassp20/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/md-sahidullah/</loc>
+    <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/privacy-is19/</loc>
+    <lastmod>2019-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/writing-technical-content/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/brij-mohan-lal-srivastava/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/jupyter/</loc>
+    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/icassp20-attacker/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/code-mixing/</loc>
+    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/homophone-is18/</loc>
+    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/sunayana-sitaram/</loc>
+    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/ayushi-pandey/</loc>
+    <lastmod>2018-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/bhanu-teja-nellore/</loc>
+    <lastmod>2018-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/kasi-sai-teja/</loc>
+    <lastmod>2018-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/pbcm-lrec18/</loc>
+    <lastmod>2018-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/rohit-kumar/</loc>
+    <lastmod>2018-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/suryakanth-v-gangashetty/</loc>
+    <lastmod>2018-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/anil-kumar-vuppala/</loc>
+    <lastmod>2017-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/hari-krishna-vydana/</loc>
+    <lastmod>2017-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/language-identification/</loc>
+    <lastmod>2017-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/manish-shrivastava/</loc>
+    <lastmod>2017-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/lid-ijcnn17/</loc>
+    <lastmod>2017-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/deep-learning/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/demo/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/external-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/internal-project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/academic/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/getting-started/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/demo/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+  </url>
+  
+</urlset>

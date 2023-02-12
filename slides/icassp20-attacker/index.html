@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.6.0">
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/slides/icassp20-attacker/">
+
+  <title>Evaluating Voice Conversion based Privacy Protection against Informed Attackers | Brij Mohan Lal Srivastava</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/league.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous">
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+
+  
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/pdf.css' : 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+
+
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="/img/anonymous.jpg"
+  >
+
+
+<div style="text-align: left;"> 
+  <img src="/img/partner-inria.png" style="border: none; width: 150px; background: #000000;" /> 
+  <img src="/img/ulille2.svg" style="border: none; width: 150px; background: #000000;" />
+  <img src="/img/logo-comprise-black-crop.png" style="border: none; width: 70px; background: #000000;" />
+  <img src="/img/europe-crop.png" style="border: none; width: 100px; background: #000000;" />
+  <img src="/img/anr.png" style="border: none; width: 150px; background: #000000;" />
+</div>
+
+<h2 id="div-style-text-align-left-evaluating-voice-conversion-based-privacy-protection-against-informed-attackers-div"><div style="text-align: left;"> Evaluating Voice Conversion based Privacy Protection against Informed Attackers </div></h2>
+
+<h6 id="div-style-text-align-left-brij-mohan-lal-srivastava-nathalie-vauquier-md-sahidullah-aurélien-bellet-marc-tommasi-and-emmanuel-vincent-div"><div style="text-align: left;"> Brij Mohan Lal Srivastava, Nathalie Vauquier, Md Sahidullah, Aurélien Bellet, Marc Tommasi and Emmanuel Vincent </div></h6>
+
+<div style="text-align: left;"> 
+  <img src="/img/icassp.png" style="border: none; width: 200px; background: #000000" /> 
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="context">Context</h2>
+
+<ul>
+<li><em>Distinguishable</em> and <em>Repeatable</em> biometric references can be extracted from speech</li>
+<li>Speech processing raises privacy threats</li>
+<li>Anonymization ensures that original speaker cannot be linked to the published anonymized dataset</li>
+<li>The anonymized data must be <span class="red">fit for use</span> in downstream tasks</li>
+</ul>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="contributions">Contributions</h2>
+
+<ul>
+<li>Compare 3 anonymization methods based on voice conversion</li>
+<li>Definition of <span class="green">target</span> voice selection strategies</li>
+<li>Characterization of <span class="red">attacker</span>&rsquo;s knowledge about the anonymization scheme</li>
+<li>Evaluation of <span class="red">privacy</span> and <span class="red">utility</span></li>
+</ul>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h3 id="threat-model">Threat model</h3>
+
+<div style="float: left; margin-left: -3em; width: 13em; text-align: left; font-size: 26pt; padding: 1em">
+<ul>
+<span class="fragment " data-fragment-index="1">
+   <li> The <span class="red">speaker</span> publishes the speech data after anonymization</li> 
+</span>
+<span class="fragment " data-fragment-index="2">
+   <li> The <span class="red">user</span> tries to use the anonymized public data for downstream tasks</li> 
+</span>
+<span class="fragment " data-fragment-index="3">
+   <li> The <span class="red">attacker</span> tries to discover the identity of the speaker in the public data</li> 
+</span>
+</ul>
+</div>
+
+<div style="width: 0em; height: 10em;"> 
+  <span class="fragment " data-fragment-index="1">
+   <img src="/img/threat_model_speaker.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
+</span>
+  <span class="fragment " data-fragment-index="2">
+   <img src="/img/threat_model_user.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
+</span>
+  <span class="fragment " data-fragment-index="3">
+   <img src="/img/threat_model_attacker.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
+</span>
+  <span class="fragment " data-fragment-index="4">
+   <img src="/img/threat_model_all.svg" style="border: none; position: absolute; background: #ffffff; width: 13em" />  
+</span>
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h1 id="voice-conversion-based-anonymization">Voice conversion based anonymization</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="voice-conversion">Voice conversion</h2>
+
+<ul>
+<li>Logical speaker anonymization framework
+
+<ul>
+<li>Convert <span class="green">source</span> speaker&rsquo;s voice to a <span class="green">target</span> speaker</li>
+<li>Conversion may not be perfect, residual <span class="green">source</span> speaker info might be present</li>
+<li>Choice of <span class="green">target</span> speaker is critical for strength of anonymization</li>
+</ul></li>
+<li>Allows data publication</li>
+<li>First proposed in 2009 [2], many techniques proposed thereafter</li>
+</ul>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="vc-methods-criteria">VC methods: criteria</h2>
+
+<blockquote>
+<div style="font-size: 20pt"> VC methods are selected based on the following criteria:</div>
+</blockquote>
+
+<ol>
+<li>Non-parallel</li>
+<li>Many-to-many</li>
+<li>Source/language independent</li>
+</ol>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="three-vc-methods">Three VC methods</h2>
+
+<ol>
+<li><span class="red">VoiceMask</span>: simple frequency warping based on composition of two functions $B$ and $Q$: $ f&rsquo; = B(Q(f, \alpha), \beta) $</li>
+<li><span class="red">Vocal Tract Length Normalization</span>: learn transformation parameters between source and target class spectra</li>
+<li><span class="red">Disentangled Speech Representation</span>: separate encoders for <strong>content</strong> (instance normalization) and <strong>speaker</strong> (average pooling) information</li>
+</ol>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="anonymization-model">Anonymization Model</h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="anonymization-framework">Anonymization framework</h2>
+
+<blockquote>
+<div style="font-size: 20pt"> The <span class="red">target</span> can be a single speaker from the pool or an average of many speakers.</div>
+</blockquote>
+
+<div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
+  <img src="/img/anon_scheme.svg" style="border: none; width: 30em; background: #ffffff" />
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="target-selection-strategies">Target selection strategies</h2>
+
+<div style="width: 40em; height: 8em; margin-left: -8em; box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
+  <span class="fragment " >
+   <img src="/img/sconst.png" style="border: none; width: 8em" />  
+</span>
+  <span class="fragment " >
+   <img src="/img/sperm.png" style="border: none; width: 8em" />  
+</span>
+  <span class="fragment " >
+   <img src="/img/srand.png" style="border: none; width: 8em" />  
+</span>
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="design-of-attackers">Design of Attackers</h2>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="ignorant-attacker">Ignorant attacker</h2>
+
+<div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
+  <img src="/img/ignorant_attacker.svg" style="border: none; width: 30em; background: #ffffff" />
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="semi-informed-attacker">Semi-Informed attacker</h2>
+
+<div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
+  <img src="/img/semi_informed_attacker.svg" style="border: none; width: 30em; background: #ffffff" />
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="informed-attacker">Informed attacker</h2>
+
+<div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
+  <img src="/img/informed_attacker.svg" style="border: none; width: 30em; background: #ffffff" />
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h1 id="experiments">Experiments</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h3 id="training-data">Training data</h3>
+
+<blockquote>
+<div style="font-size: 15pt"> All the data subsets are derived from LibriSpeech corpus. </div>
+</blockquote>
+
+<table style="font-size: 17pt">
+    <thead>
+        <tr>
+            <th>Component</th>
+            <th>Dataset</th>
+            <th>Training</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>VoiceMask</td>
+        <td>None</td>
+        <td>No training required, ($\alpha$, $\beta$ are selected randomly from a predefined range)</td>
+    </tr>
+    <tr>
+        <td>Disentangled VC</td>
+        <td>LibriTTS 100h</td>
+        <td>(Content, Speaker) encoders are trained end-to-end to reconstruct the speech waveform</td>
+    </tr>
+        <tr>
+        <td>VTLN</td>
+        <td rowspan=3>LibriSpeech 460h</td>
+        <td>K-means clusters (8 centroids) and transformation paramters are learnt</td>
+        </tr>
+        <tr>
+        <td>Attackers</td>
+            <td>Anonymized training data to induce "knowledge" of anonymization</td>
+        </tr>
+        <tr>
+        <td>ASR for evaluation</td>
+        <td>End-to-End (CTC + Attention) ASR is trained</td>
+        </tr>
+    <tr></tr>
+    </tbody>
+</table>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="evaluation-data">Evaluation data</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">Male</th>
+<th>Female</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>#Speakers</td>
+<td align="center">13</td>
+<td>16</td>
+</tr>
+
+<tr>
+<td>Genuine trials</td>
+<td align="center">449</td>
+<td>548</td>
+</tr>
+
+<tr>
+<td>Impostor trials</td>
+<td align="center">9457</td>
+<td>11,196</td>
+</tr>
+</tbody>
+</table>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="evaluation-protocol">Evaluation protocol</h2>
+
+<ul>
+<li>Attackers are simulated using speaker verification, which produce PLDA scores</li>
+<li>Measure of <span class="red">privacy</span>: Equal Error Rate (<span class="green">EER</span>) computed using PLDA scores</li>
+<li>Measure of <span class="red">utility</span>: Word Error Rate (<span class="green">WER</span>)</li>
+</ul>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h1 id="results">Results</h1>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h3 id="results-on-privacy-eer">Results on privacy (EER)</h3>
+
+<div style="width: 10em; height: 10em; float: left; margin-left: -6em"> 
+  <span class="fragment " data-fragment-index="1">
+   <img src="/img/eer_bars_baseline.svg" style="border: none; position: absolute" />  
+</span>
+  <span class="fragment " data-fragment-index="2">
+   <img src="/img/eer_bars_ig.svg" style="border: none; position: absolute" />  
+</span>
+  <span class="fragment " data-fragment-index="3">
+   <img src="/img/eer_bars_si.svg" style="border: none; position: absolute" />  
+</span>
+  <span class="fragment " data-fragment-index="4">
+   <img src="/img/eer_bars_in.svg" style="border: none; position: absolute" />  
+</span>
+</div>
+
+<div style="float: right; margin-left: 14em; position: absolute; width: 11em">
+  <ul style="font-size: 22pt; padding: 1em">
+    <span class="fragment " data-fragment-index="3">
+   <li>Reasonable privacy protection can be provided in Semi-Informed case</li> 
+</span>
+    <span class="fragment " data-fragment-index="3">
+   <li><i>perm</i> strategy outperforms the rest</li> 
+</span>
+    <span class="fragment " data-fragment-index="4">
+   <li>Informed attacker shows speaker information can be discovered, but not realistic</li> 
+</span>
+  </ul>
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h2 id="plda-score-distribution">PLDA score distribution</h2>
+
+<ul>
+<li>More overlap between the score distributions ensures more privacy</li>
+<li>Overlap decreases as we move from <em>Ignorant</em> to <em>Informed</em> attacker</li>
+</ul>
+
+<div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1);"> 
+  <img src="/img/score_dist.svg" style="border: none; width: 40em" />
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h3 id="results-on-utility-wer">Results on utility (WER)</h3>
+
+<div style="font-size: 24pt; float: right; width: 18em; padding: 2em;">
+  <ul style="margin-left: 10em; width: 10em">
+    <li>With rise in WER, utility decreases for all VC algorithms</li>
+    <li>VoiceMask and VTLN produce reasonable loss of utility</li>
+  </ul>
+</div>
+
+<div style="box-shadow: 4px 4px 8px 4px rgba(1, 1, 1, 1), 0 6px 20px 0 rgba(1, 1, 1, 1); float: left; position: absolute"> 
+  <img src="/img/wer_bars.svg" style="border: none;" />
+</div>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+
+<h3 id="conclusion">Conclusion</h3>
+
+<ul>
+<li>Investigated VC algorithms for speaker anonymization</li>
+<li><span class="green">Target selection</span> and <span class="green">attacker&rsquo;s knowledge</span> are critical for strength of anonymization</li>
+<li>Simple methods can provide reasonable protection</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+
+  <script>
+    window.revealPlugins = { dependencies: [
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/zoom-js/zoom.js', async: true },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/math/math.js', async: true },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/print-pdf/print-pdf.js', async: true },
+      
+      { src: '\/js\/vendor\/reveal.js\/plugin\/notes\/notes.js', async: true }
+    ]};
+
+    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true, slideNumber: "c/t" };
+    let revealOptions = Object.assign({}, revealDefaults, revealPlugins);
+    Reveal.initialize(revealOptions);
+  </script>
+
+</body>
+</html>
