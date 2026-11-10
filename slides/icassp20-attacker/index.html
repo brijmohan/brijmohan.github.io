@@ -1,3 +1,239 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=generator content="Source Themes Academic 4.6.0"><link rel=manifest href=/index.webmanifest><link rel=icon type=image/png href=/img/icon-32.png><link rel=apple-touch-icon type=image/png href=/img/icon-192.png><link rel=canonical href=https://brijmohan.github.io/slides/icassp20-attacker/><title>Evaluating Voice Conversion based Privacy Protection against Informed Attackers | Brij Mohan Lal Srivastava</title><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/league.min.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css crossorigin=anonymous><link rel=stylesheet href=/css/reveal_custom.min.css><script>var link=document.createElement("link");link.rel="stylesheet",link.type="text/css",link.href=window.location.search.match(/print-pdf/gi)?"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/print/pdf.css":"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/print/paper.css",document.getElementsByTagName("head")[0].appendChild(link)</script></head><body><div class=reveal><div class=slides><section data-noprocess data-shortcode-slide data-background-image=/img/anonymous.jpg><h2 id=div-styletext-align-left-evaluating-voice-conversion-based-privacy-protection-against-informed-attackers-div>Evaluating Voice Conversion based Privacy Protection against Informed Attackers</h2><h6 id=div-styletext-align-left-brij-mohan-lal-srivastava-nathalie-vauquier-md-sahidullah-aurélien-bellet-marc-tommasi-and-emmanuel-vincent-div>Brij Mohan Lal Srivastava, Nathalie Vauquier, Md Sahidullah, Aurélien Bellet, Marc Tommasi and Emmanuel Vincent</h6><hr><h2 id=context>Context</h2><ul><li><em>Distinguishable</em> and <em>Repeatable</em> biometric references can be extracted from speech</li><li>Speech processing raises privacy threats</li><li>Anonymization ensures that original speaker cannot be linked to the published anonymized dataset</li><li>The anonymized data must be fit for use in downstream tasks</li></ul><hr><h2 id=contributions>Contributions</h2><ul><li>Compare 3 anonymization methods based on voice conversion</li><li>Definition of target voice selection strategies</li><li>Characterization of attacker&rsquo;s knowledge about the anonymization scheme</li><li>Evaluation of privacy and utility</li></ul><hr><h3 id=threat-model>Threat model</h3><hr><h1 id=voice-conversion-based-anonymization>Voice conversion based anonymization</h1><hr><h2 id=voice-conversion>Voice conversion</h2><ul><li>Logical speaker anonymization framework<ul><li>Convert source speaker&rsquo;s voice to a target speaker</li><li>Conversion may not be perfect, residual source speaker info might be present</li><li>Choice of target speaker is critical for strength of anonymization</li></ul></li><li>Allows data publication</li><li>First proposed in 2009 [2], many techniques proposed thereafter</li></ul><hr><h2 id=vc-methods-criteria>VC methods: criteria</h2><blockquote></blockquote><ol><li>Non-parallel</li><li>Many-to-many</li><li>Source/language independent</li></ol><hr><h2 id=three-vc-methods>Three VC methods</h2><ol><li>VoiceMask: simple frequency warping based on composition of two functions $B$ and $Q$: $ f&rsquo; = B(Q(f, \alpha), \beta) $</li><li>Vocal Tract Length Normalization: learn transformation parameters between source and target class spectra</li><li>Disentangled Speech Representation: separate encoders for <strong>content</strong> (instance normalization) and <strong>speaker</strong> (average pooling) information</li></ol><hr><h2 id=anonymization-model>Anonymization Model</h2><hr><h2 id=anonymization-framework>Anonymization framework</h2><blockquote></blockquote><hr><h2 id=target-selection-strategies>Target selection strategies</h2><hr><h2 id=design-of-attackers>Design of Attackers</h2><hr><h2 id=ignorant-attacker>Ignorant attacker</h2><hr><h2 id=semi-informed-attacker>Semi-Informed attacker</h2><hr><h2 id=informed-attacker>Informed attacker</h2><hr><h1 id=experiments>Experiments</h1><hr><h3 id=training-data>Training data</h3><blockquote></blockquote><hr><h2 id=evaluation-data>Evaluation data</h2><table><thead><tr><th></th><th style=text-align:center>Male</th><th>Female</th></tr></thead><tbody><tr><td>#Speakers</td><td style=text-align:center>13</td><td>16</td></tr><tr><td>Genuine trials</td><td style=text-align:center>449</td><td>548</td></tr><tr><td>Impostor trials</td><td style=text-align:center>9457</td><td>11,196</td></tr></tbody></table><hr><h2 id=evaluation-protocol>Evaluation protocol</h2><ul><li>Attackers are simulated using speaker verification, which produce PLDA scores</li><li>Measure of privacy: Equal Error Rate (EER) computed using PLDA scores</li><li>Measure of utility: Word Error Rate (WER)</li></ul><hr><h1 id=results>Results</h1><hr><h3 id=results-on-privacy-eer>Results on privacy (EER)</h3><hr><h2 id=plda-score-distribution>PLDA score distribution</h2><ul><li>More overlap between the score distributions ensures more privacy</li><li>Overlap decreases as we move from <em>Ignorant</em> to <em>Informed</em> attacker</li></ul><hr><h3 id=results-on-utility-wer>Results on utility (WER)</h3><hr><h3 id=conclusion>Conclusion</h3><ul><li>Investigated VC algorithms for speaker anonymization</li><li>Target selection and attacker&rsquo;s knowledge are critical for strength of anonymization</li><li>Simple methods can provide reasonable protection</li></ul></section></div></div><script src=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js></script>
-<script>window.revealPlugins={dependencies:[{src:"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js",condition:function(){return!!document.querySelector("[data-markdown]")}},{src:"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js",condition:function(){return!!document.querySelector("[data-markdown]")}},{src:"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.js",async:!0,callback:function(){hljs.initHighlightingOnLoad()}},{src:"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/zoom-js/zoom.js",async:!0},{src:"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/math/math.js",async:!0},{src:"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/print-pdf/print-pdf.js",async:!0},{src:"/js/vendor/reveal.js/plugin/notes/notes.js",async:!0}]};let revealDefaults={center:!0,controls:!0,history:!0,progress:!0,transition:"slide",mouseWheel:!0,slideNumber:"c/t"},revealOptions=Object.assign({},revealDefaults,revealPlugins);Reveal.initialize(revealOptions)</script></body></html>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.6.0">
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://brijmohan.github.io/slides/icassp20-attacker/">
+
+  <title>Evaluating Voice Conversion based Privacy Protection against Informed Attackers | Brij Mohan Lal Srivastava</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/league.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous">
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+
+  
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/pdf.css' : 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+<section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image="/img/anonymous.jpg"
+  >
+
+<!-- raw HTML omitted -->
+<h2 id="div-styletext-align-left-evaluating-voice-conversion-based-privacy-protection-against-informed-attackers-div"><!-- raw HTML omitted --> Evaluating Voice Conversion based Privacy Protection against Informed Attackers <!-- raw HTML omitted --></h2>
+<h6 id="div-styletext-align-left-brij-mohan-lal-srivastava-nathalie-vauquier-md-sahidullah-aurélien-bellet-marc-tommasi-and-emmanuel-vincent-div"><!-- raw HTML omitted --> Brij Mohan Lal Srivastava, Nathalie Vauquier, Md Sahidullah, Aurélien Bellet, Marc Tommasi and Emmanuel Vincent <!-- raw HTML omitted --></h6>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="context">Context</h2>
+<ul>
+<li><em>Distinguishable</em> and <em>Repeatable</em> biometric references can be extracted from speech</li>
+<li>Speech processing raises privacy threats</li>
+<li>Anonymization ensures that original speaker cannot be linked to the published anonymized dataset</li>
+<li>The anonymized data must be <!-- raw HTML omitted -->fit for use<!-- raw HTML omitted --> in downstream tasks</li>
+</ul>
+<hr>
+<h2 id="contributions">Contributions</h2>
+<ul>
+<li>Compare 3 anonymization methods based on voice conversion</li>
+<li>Definition of <!-- raw HTML omitted -->target<!-- raw HTML omitted --> voice selection strategies</li>
+<li>Characterization of <!-- raw HTML omitted -->attacker<!-- raw HTML omitted -->&rsquo;s knowledge about the anonymization scheme</li>
+<li>Evaluation of <!-- raw HTML omitted -->privacy<!-- raw HTML omitted --> and <!-- raw HTML omitted -->utility<!-- raw HTML omitted --></li>
+</ul>
+<hr>
+<h3 id="threat-model">Threat model</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<h1 id="voice-conversion-based-anonymization">Voice conversion based anonymization</h1>
+<hr>
+<h2 id="voice-conversion">Voice conversion</h2>
+<ul>
+<li>Logical speaker anonymization framework
+<ul>
+<li>Convert <!-- raw HTML omitted -->source<!-- raw HTML omitted --> speaker&rsquo;s voice to a <!-- raw HTML omitted -->target<!-- raw HTML omitted --> speaker</li>
+<li>Conversion may not be perfect, residual <!-- raw HTML omitted -->source<!-- raw HTML omitted --> speaker info might be present</li>
+<li>Choice of <!-- raw HTML omitted -->target<!-- raw HTML omitted --> speaker is critical for strength of anonymization</li>
+</ul>
+</li>
+<li>Allows data publication</li>
+<li>First proposed in 2009 [2], many techniques proposed thereafter</li>
+</ul>
+<hr>
+<h2 id="vc-methods-criteria">VC methods: criteria</h2>
+<blockquote>
+<!-- raw HTML omitted -->
+</blockquote>
+<ol>
+<li>Non-parallel</li>
+<li>Many-to-many</li>
+<li>Source/language independent</li>
+</ol>
+<hr>
+<h2 id="three-vc-methods">Three VC methods</h2>
+<ol>
+<li><!-- raw HTML omitted -->VoiceMask<!-- raw HTML omitted -->: simple frequency warping based on composition of two functions $B$ and $Q$: $ f&rsquo; = B(Q(f, \alpha), \beta) $</li>
+<li><!-- raw HTML omitted -->Vocal Tract Length Normalization<!-- raw HTML omitted -->: learn transformation parameters between source and target class spectra</li>
+<li><!-- raw HTML omitted -->Disentangled Speech Representation<!-- raw HTML omitted -->: separate encoders for <strong>content</strong> (instance normalization) and <strong>speaker</strong> (average pooling) information</li>
+</ol>
+<hr>
+<h2 id="anonymization-model">Anonymization Model</h2>
+<hr>
+<h2 id="anonymization-framework">Anonymization framework</h2>
+<blockquote>
+<!-- raw HTML omitted -->
+</blockquote>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="target-selection-strategies">Target selection strategies</h2>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="design-of-attackers">Design of Attackers</h2>
+<hr>
+<h2 id="ignorant-attacker">Ignorant attacker</h2>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="semi-informed-attacker">Semi-Informed attacker</h2>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="informed-attacker">Informed attacker</h2>
+<!-- raw HTML omitted -->
+<hr>
+<h1 id="experiments">Experiments</h1>
+<hr>
+<h3 id="training-data">Training data</h3>
+<blockquote>
+<!-- raw HTML omitted -->
+</blockquote>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="evaluation-data">Evaluation data</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Male</th>
+<th>Female</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#Speakers</td>
+<td style="text-align:center">13</td>
+<td>16</td>
+</tr>
+<tr>
+<td>Genuine trials</td>
+<td style="text-align:center">449</td>
+<td>548</td>
+</tr>
+<tr>
+<td>Impostor trials</td>
+<td style="text-align:center">9457</td>
+<td>11,196</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="evaluation-protocol">Evaluation protocol</h2>
+<ul>
+<li>Attackers are simulated using speaker verification, which produce PLDA scores</li>
+<li>Measure of <!-- raw HTML omitted -->privacy<!-- raw HTML omitted -->: Equal Error Rate (<!-- raw HTML omitted -->EER<!-- raw HTML omitted -->) computed using PLDA scores</li>
+<li>Measure of <!-- raw HTML omitted -->utility<!-- raw HTML omitted -->: Word Error Rate (<!-- raw HTML omitted -->WER<!-- raw HTML omitted -->)</li>
+</ul>
+<hr>
+<h1 id="results">Results</h1>
+<hr>
+<h3 id="results-on-privacy-eer">Results on privacy (EER)</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="plda-score-distribution">PLDA score distribution</h2>
+<ul>
+<li>More overlap between the score distributions ensures more privacy</li>
+<li>Overlap decreases as we move from <em>Ignorant</em> to <em>Informed</em> attacker</li>
+</ul>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="results-on-utility-wer">Results on utility (WER)</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li>Investigated VC algorithms for speaker anonymization</li>
+<li><!-- raw HTML omitted -->Target selection<!-- raw HTML omitted --> and <!-- raw HTML omitted -->attacker&rsquo;s knowledge<!-- raw HTML omitted --> are critical for strength of anonymization</li>
+<li>Simple methods can provide reasonable protection</li>
+</ul>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+
+  <script>
+    window.revealPlugins = { dependencies: [
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/zoom-js/zoom.js', async: true },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/math/math.js', async: true },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/print-pdf/print-pdf.js', async: true },
+      
+      { src: '\/js\/vendor\/reveal.js\/plugin\/notes\/notes.js', async: true }
+    ]};
+
+    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true, slideNumber: "c/t" };
+    let revealOptions = Object.assign({}, revealDefaults, revealPlugins);
+    Reveal.initialize(revealOptions);
+  </script>
+
+</body>
+</html>

@@ -1,1 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Seyed Ahmad Hosseini | Brij Mohan Lal Srivastava</title><link>https://brijmohan.github.io/authors/seyed-ahmad-hosseini/</link><atom:link href="https://brijmohan.github.io/authors/seyed-ahmad-hosseini/index.xml" rel="self" type="application/rss+xml"/><description>Seyed Ahmad Hosseini</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0000</lastBuildDate><image><url>https://brijmohan.github.io/img/icon-192.png</url><title>Seyed Ahmad Hosseini</title><link>https://brijmohan.github.io/authors/seyed-ahmad-hosseini/</link></image><item><title>Acoustic Token Admixture for Joint Speaker and Content Anonymization</title><link>https://brijmohan.github.io/publication/acoustic-token-is26/</link><pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/acoustic-token-is26/</guid><description/></item><item><title>Legally Validated Evaluation Framework for Voice Anonymization</title><link>https://brijmohan.github.io/publication/eval-framework-is25/</link><pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/eval-framework-is25/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seyed Ahmad Hosseini | Brij Mohan Lal Srivastava</title>
+    <link>https://brijmohan.github.io/authors/seyed-ahmad-hosseini/</link>
+      <atom:link href="https://brijmohan.github.io/authors/seyed-ahmad-hosseini/index.xml" rel="self" type="application/rss+xml" />
+    <description>Seyed Ahmad Hosseini</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://brijmohan.github.io/img/icon-192.png</url>
+      <title>Seyed Ahmad Hosseini</title>
+      <link>https://brijmohan.github.io/authors/seyed-ahmad-hosseini/</link>
+    </image>
+    
+    <item>
+      <title>Acoustic Token Admixture for Joint Speaker and Content Anonymization</title>
+      <link>https://brijmohan.github.io/publication/acoustic-token-is26/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/acoustic-token-is26/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Legally Validated Evaluation Framework for Voice Anonymization</title>
+      <link>https://brijmohan.github.io/publication/eval-framework-is25/</link>
+      <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/eval-framework-is25/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Code.&lt;/strong&gt; The reference implementation of both metrics is open source as &lt;a href=&#34;https://github.com/brijmohan/voice-anonymization-legal-eval&#34;&gt;voice-anonymization-legal-eval&lt;/a&gt; (&lt;code&gt;pip install voice-anonymization-legal-eval&lt;/code&gt;), with the score matrices and dataset definitions on &lt;a href=&#34;https://doi.org/10.5281/zenodo.23142030&#34;&gt;Zenodo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On the CNIL&amp;rsquo;s role, stated precisely.&lt;/strong&gt; In August 2024 the Technological Expertise Department of the CNIL, the French data protection authority, reviewed Nijta&amp;rsquo;s Voice Harbor solution and identified no obstacle to it demonstrating compliance with the three anonymization criteria of Article 29 Working Party Opinion 05/2014. These metrics were the vehicle of that demonstration. It is a technical opinion on a solution, not a certification of the metrics, and it does not transfer to an organisation deploying the solution, which must demonstrate anonymity in its own context.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

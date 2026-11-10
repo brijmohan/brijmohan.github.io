@@ -1,2 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jose Patino | Brij Mohan Lal Srivastava</title><link>https://brijmohan.github.io/authors/jose-patino/</link><atom:link href="https://brijmohan.github.io/authors/jose-patino/index.xml" rel="self" type="application/rss+xml"/><description>Jose Patino</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Wed, 16 Feb 2022 00:00:00 +0000</lastBuildDate><image><url>https://brijmohan.github.io/img/icon-192.png</url><title>Jose Patino</title><link>https://brijmohan.github.io/authors/jose-patino/</link></image><item><title>The VoicePrivacy 2020 Challenge: Results and findings</title><link>https://brijmohan.github.io/publication/vpc-csl-2022/</link><pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/vpc-csl-2022/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Introducing the VoicePrivacy initiative</title><link>https://brijmohan.github.io/publication/vpc-initiative-is20/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/vpc-initiative-is20/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jose Patino | Brij Mohan Lal Srivastava</title>
+    <link>https://brijmohan.github.io/authors/jose-patino/</link>
+      <atom:link href="https://brijmohan.github.io/authors/jose-patino/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jose Patino</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Wed, 16 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://brijmohan.github.io/img/icon-192.png</url>
+      <title>Jose Patino</title>
+      <link>https://brijmohan.github.io/authors/jose-patino/</link>
+    </image>
+    
+    <item>
+      <title>The VoicePrivacy 2020 Challenge: Results and findings</title>
+      <link>https://brijmohan.github.io/publication/vpc-csl-2022/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/vpc-csl-2022/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing the VoicePrivacy initiative</title>
+      <link>https://brijmohan.github.io/publication/vpc-initiative-is20/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/vpc-initiative-is20/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

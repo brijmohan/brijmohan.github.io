@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ali Golmakani | Brij Mohan Lal Srivastava</title><link>https://brijmohan.github.io/authors/ali-golmakani/</link><atom:link href="https://brijmohan.github.io/authors/ali-golmakani/index.xml" rel="self" type="application/rss+xml"/><description>Ali Golmakani</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0000</lastBuildDate><image><url>https://brijmohan.github.io/img/icon-192.png</url><title>Ali Golmakani</title><link>https://brijmohan.github.io/authors/ali-golmakani/</link></image><item><title>Acoustic Token Admixture for Joint Speaker and Content Anonymization</title><link>https://brijmohan.github.io/publication/acoustic-token-is26/</link><pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/acoustic-token-is26/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ali Golmakani | Brij Mohan Lal Srivastava</title>
+    <link>https://brijmohan.github.io/authors/ali-golmakani/</link>
+      <atom:link href="https://brijmohan.github.io/authors/ali-golmakani/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ali Golmakani</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://brijmohan.github.io/img/icon-192.png</url>
+      <title>Ali Golmakani</title>
+      <link>https://brijmohan.github.io/authors/ali-golmakani/</link>
+    </image>
+    
+    <item>
+      <title>Acoustic Token Admixture for Joint Speaker and Content Anonymization</title>
+      <link>https://brijmohan.github.io/publication/acoustic-token-is26/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/acoustic-token-is26/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

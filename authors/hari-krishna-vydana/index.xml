@@ -1,3 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hari Krishna Vydana | Brij Mohan Lal Srivastava</title><link>https://brijmohan.github.io/authors/hari-krishna-vydana/</link><atom:link href="https://brijmohan.github.io/authors/hari-krishna-vydana/index.xml" rel="self" type="application/rss+xml"/><description>Hari Krishna Vydana</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Fri, 12 May 2017 00:00:00 +0000</lastBuildDate><image><url>https://brijmohan.github.io/img/icon-192.png</url><title>Hari Krishna Vydana</title><link>https://brijmohan.github.io/authors/hari-krishna-vydana/</link></image><item><title>Significance of neural phonotactic models for large-scale spoken language identification</title><link>https://brijmohan.github.io/publication/lid-ijcnn17/</link><pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/lid-ijcnn17/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hari Krishna Vydana | Brij Mohan Lal Srivastava</title>
+    <link>https://brijmohan.github.io/authors/hari-krishna-vydana/</link>
+      <atom:link href="https://brijmohan.github.io/authors/hari-krishna-vydana/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hari Krishna Vydana</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Fri, 12 May 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://brijmohan.github.io/img/icon-192.png</url>
+      <title>Hari Krishna Vydana</title>
+      <link>https://brijmohan.github.io/authors/hari-krishna-vydana/</link>
+    </image>
+    
+    <item>
+      <title>Significance of neural phonotactic models for large-scale spoken language identification</title>
+      <link>https://brijmohan.github.io/publication/lid-ijcnn17/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/lid-ijcnn17/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

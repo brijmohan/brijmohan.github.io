@@ -1,110 +1,161 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Brij Mohan Lal Srivastava</title><link>https://brijmohan.github.io/authors/admin/</link><atom:link href="https://brijmohan.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml"/><description>Brij Mohan Lal Srivastava</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0000</lastBuildDate><image><url>https://brijmohan.github.io/img/icon-192.png</url><title>Brij Mohan Lal Srivastava</title><link>https://brijmohan.github.io/authors/admin/</link></image><item><title>Acoustic Token Admixture for Joint Speaker and Content Anonymization</title><link>https://brijmohan.github.io/publication/acoustic-token-is26/</link><pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/acoustic-token-is26/</guid><description/></item><item><title>Legally Validated Evaluation Framework for Voice Anonymization</title><link>https://brijmohan.github.io/publication/eval-framework-is25/</link><pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/eval-framework-is25/</guid><description/></item><item><title>Differentially Private Speaker Anonymization</title><link>https://brijmohan.github.io/publication/dpspeech-2022/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/dpspeech-2022/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted --></description></item><item><title>Enhancing Speech Privacy with Slicing</title><link>https://brijmohan.github.io/publication/slicing-is22/</link><pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/slicing-is22/</guid><description/></item><item><title>Privacy and Utility of X-Vector Based Speaker Anonymization</title><link>https://brijmohan.github.io/publication/xvector-taslp22/</link><pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/xvector-taslp22/</guid><description/></item><item><title>The VoicePrivacy 2020 Challenge: Results and findings</title><link>https://brijmohan.github.io/publication/vpc-csl-2022/</link><pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/vpc-csl-2022/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>A comparative study of speech anonymization metrics</title><link>https://brijmohan.github.io/publication/metrics-is20/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/metrics-is20/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item><item><title>Design Choices for X-vector Based Speaker Anonymization</title><link>https://brijmohan.github.io/publication/design-choices-is20/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/design-choices-is20/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item><item><title>Introducing the VoicePrivacy initiative</title><link>https://brijmohan.github.io/publication/vpc-initiative-is20/</link><pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/vpc-initiative-is20/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item><item><title>Learnings from Technological Interventions in a Low Resource Language: A Case-Study on Gondi</title><link>https://brijmohan.github.io/publication/gondi-lrec20/</link><pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/gondi-lrec20/</guid><description/></item><item><title>Evaluating voice conversion-based privacy protection against informed attackers</title><link>https://brijmohan.github.io/publication/attacker-icassp20/</link><pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/attacker-icassp20/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item><item><title>Privacy-Preserving Adversarial Representation Learning in ASR: Reality or Illusion?</title><link>https://brijmohan.github.io/publication/privacy-is19/</link><pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/privacy-is19/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item><item><title>Display Jupyter Notebooks with Academic</title><link>https://brijmohan.github.io/post/jupyter/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/post/jupyter/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> IPython.core.display &lt;span style="color:#f92672">import&lt;/span> Image
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Image(&lt;span style="color:#e6db74">&amp;#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&amp;#39;&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="./index_1_0.png" alt="png">&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>print(&lt;span style="color:#e6db74">&amp;#34;Welcome to Academic!&amp;#34;&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>Welcome to Academic!
-&lt;/code>&lt;/pre>
-&lt;h2 id="install-python-and-jupyterlab">Install Python and JupyterLab&lt;/h2>
-&lt;p>&lt;a href="https://www.anaconda.com/distribution/#download-section">Install Anaconda&lt;/a> which includes Python 3 and JupyterLab.&lt;/p>
-&lt;p>Alternatively, install JupyterLab with &lt;code>pip3 install jupyterlab&lt;/code>.&lt;/p>
-&lt;h2 id="create-or-upload-a-jupyter-notebook">Create or upload a Jupyter notebook&lt;/h2>
-&lt;p>Run the following commands in your Terminal, substituting &lt;code>&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code> and &lt;code>&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code> with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>jupyter lab index.ipynb
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>jupyter&lt;/code> command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p>
-&lt;h2 id="edit-your-post-metadata">Edit your post metadata&lt;/h2>
-&lt;p>The first cell of your Jupter notebook will contain your post metadata (&lt;a href="https://sourcethemes.com/academic/docs/front-matter/">front matter&lt;/a>).&lt;/p>
-&lt;p>In Jupter, choose &lt;em>Markdown&lt;/em> as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p>
-&lt;pre tabindex="0">&lt;code>---
-title: My post&amp;#39;s title
-date: 2019-09-01
-# Put any other Academic metadata here...
----
-&lt;/code>&lt;/pre>&lt;p>Edit the metadata of your post, using the &lt;a href="https://sourcethemes.com/academic/docs/managing-content">documentation&lt;/a> as a guide to the available options.&lt;/p>
-&lt;p>To set a &lt;a href="https://sourcethemes.com/academic/docs/managing-content/#featured-image">featured image&lt;/a>, place an image named &lt;code>featured&lt;/code> into your post&amp;rsquo;s folder.&lt;/p>
-&lt;p>For other tips, such as using math, see the guide on &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">writing content with Academic&lt;/a>.&lt;/p>
-&lt;h2 id="convert-notebook-to-markdown">Convert notebook to Markdown&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir&lt;span style="color:#f92672">=&lt;/span>.
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="example">Example&lt;/h2>
-&lt;p>This post was created with Jupyter. The orginal files can be found at &lt;a href="https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter">https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a>&lt;/p></description></item><item><title>Homophone Identification and Merging for Code-switched Speech Recognition</title><link>https://brijmohan.github.io/publication/homophone-is18/</link><pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/homophone-is18/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item><item><title>Phonetically Balanced Code-Mixed Speech Corpus for Hindi-English Automatic Speech Recognition</title><link>https://brijmohan.github.io/publication/pbcm-lrec18/</link><pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/pbcm-lrec18/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item><item><title>Significance of neural phonotactic models for large-scale spoken language identification</title><link>https://brijmohan.github.io/publication/lid-ijcnn17/</link><pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/lid-ijcnn17/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item><item><title>Academic: the website builder for Hugo</title><link>https://brijmohan.github.io/post/getting-started/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/post/getting-started/</guid><description>&lt;p>&lt;strong>Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em>widgets&lt;/em>, &lt;em>themes&lt;/em>, and &lt;em>language packs&lt;/em> included!&lt;/strong>&lt;/p>
-&lt;p>&lt;a href="https://academic-demo.netlify.com/">Check out the latest &lt;strong>demo&lt;/strong>&lt;/a> of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href="https://sourcethemes.com/academic/#expo">view the &lt;strong>showcase&lt;/strong>&lt;/a> of personal, project, and business sites.&lt;/p>
-&lt;ul>
-&lt;li>👉 &lt;a href="#install">&lt;strong>Get Started&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>📚 &lt;a href="https://sourcethemes.com/academic/docs/">View the &lt;strong>documentation&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>💬 &lt;a href="https://discourse.gohugo.io">&lt;strong>Ask a question&lt;/strong> on the forum&lt;/a>&lt;/li>
-&lt;li>👥 &lt;a href="https://spectrum.chat/academic">Chat with the &lt;strong>community&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>🐦 Twitter: &lt;a href="https://twitter.com/source_themes">@source_themes&lt;/a> &lt;a href="https://twitter.com/GeorgeCushen">@GeorgeCushen&lt;/a> &lt;a href="https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd">#MadeWithAcademic&lt;/a>&lt;/li>
-&lt;li>💡 &lt;a href="https://github.com/gcushen/hugo-academic/issues">Request a &lt;strong>feature&lt;/strong> or report a &lt;strong>bug&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>⬆️ &lt;strong>Updating?&lt;/strong> View the &lt;a href="https://sourcethemes.com/academic/docs/update/">Update Guide&lt;/a> and &lt;a href="https://sourcethemes.com/academic/updates/">Release Notes&lt;/a>&lt;/li>
-&lt;li>❤️ &lt;strong>Support development&lt;/strong> of Academic:
-&lt;ul>
-&lt;li>☕️ &lt;a href="https://paypal.me/cushen">&lt;strong>Donate a coffee&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>💵 &lt;a href="https://www.patreon.com/cushen">Become a backer on &lt;strong>Patreon&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>🖼️ &lt;a href="https://www.redbubble.com/people/neutreno/works/34387919-academic">Decorate your laptop or journal with an Academic &lt;strong>sticker&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>👕 &lt;a href="https://academic.threadless.com/">Wear the &lt;strong>T-shirt&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>👩‍💻 &lt;a href="https://sourcethemes.com/academic/docs/contribute/">&lt;strong>Contribute&lt;/strong>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;figure>
-&lt;a data-fancybox="" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png" data-caption="Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.">
-&lt;img src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png" alt="" >&lt;/a>
-&lt;figcaption>
-Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>&lt;strong>Key features:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Page builder&lt;/strong> - Create &lt;em>anything&lt;/em> with &lt;a href="https://sourcethemes.com/academic/docs/page-builder/">&lt;strong>widgets&lt;/strong>&lt;/a> and &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">&lt;strong>elements&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Edit any type of content&lt;/strong> - Blog posts, publications, talks, slides, projects, and more!&lt;/li>
-&lt;li>&lt;strong>Create content&lt;/strong> in &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">&lt;strong>Markdown&lt;/strong>&lt;/a>, &lt;a href="https://sourcethemes.com/academic/docs/jupyter/">&lt;strong>Jupyter&lt;/strong>&lt;/a>, or &lt;a href="https://sourcethemes.com/academic/docs/install/#install-with-rstudio">&lt;strong>RStudio&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Plugin System&lt;/strong> - Fully customizable &lt;a href="https://sourcethemes.com/academic/themes/">&lt;strong>color&lt;/strong> and &lt;strong>font themes&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Display Code and Math&lt;/strong> - Code highlighting and &lt;a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX math&lt;/a> supported&lt;/li>
-&lt;li>&lt;strong>Integrations&lt;/strong> - &lt;a href="https://analytics.google.com">Google Analytics&lt;/a>, &lt;a href="https://disqus.com">Disqus commenting&lt;/a>, Maps, Contact Forms, and more!&lt;/li>
-&lt;li>&lt;strong>Beautiful Site&lt;/strong> - Simple and refreshing one page design&lt;/li>
-&lt;li>&lt;strong>Industry-Leading SEO&lt;/strong> - Help get your website found on search engines and social media&lt;/li>
-&lt;li>&lt;strong>Media Galleries&lt;/strong> - Display your images and videos with captions in a customizable gallery&lt;/li>
-&lt;li>&lt;strong>Mobile Friendly&lt;/strong> - Look amazing on every screen with a mobile friendly version of your site&lt;/li>
-&lt;li>&lt;strong>Multi-language&lt;/strong> - 15+ language packs including English, 中文, and Português&lt;/li>
-&lt;li>&lt;strong>Multi-user&lt;/strong> - Each author gets their own profile page&lt;/li>
-&lt;li>&lt;strong>Privacy Pack&lt;/strong> - Assists with GDPR&lt;/li>
-&lt;li>&lt;strong>Stand Out&lt;/strong> - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li>
-&lt;li>&lt;strong>One-Click Deployment&lt;/strong> - No servers. No databases. Only files.&lt;/li>
-&lt;/ul>
-&lt;h2 id="themes">Themes&lt;/h2>
-&lt;p>Academic comes with &lt;strong>automatic day (light) and night (dark) mode&lt;/strong> built-in. Alternatively, visitors can choose their preferred mode - click the sun/moon icon in the top right of the &lt;a href="https://academic-demo.netlify.com/">Demo&lt;/a> to see it in action! Day/night mode can also be disabled by the site admin in &lt;code>params.toml&lt;/code>.&lt;/p>
-&lt;p>&lt;a href="https://sourcethemes.com/academic/themes/">Choose a stunning &lt;strong>theme&lt;/strong> and &lt;strong>font&lt;/strong>&lt;/a> for your site. Themes are fully &lt;a href="https://sourcethemes.com/academic/docs/customization/#custom-theme">customizable&lt;/a>.&lt;/p>
-&lt;h2 id="ecosystem">Ecosystem&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>&lt;a href="https://github.com/sourcethemes/academic-admin">Academic Admin&lt;/a>:&lt;/strong> An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://github.com/sourcethemes/academic-scripts">Academic Scripts&lt;/a>:&lt;/strong> Scripts to help migrate content to new versions of Academic&lt;/li>
-&lt;/ul>
-&lt;h2 id="install">Install&lt;/h2>
-&lt;p>You can choose from one of the following four methods to install:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://sourcethemes.com/academic/docs/install/#install-with-web-browser">&lt;strong>one-click install using your web browser (recommended)&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://sourcethemes.com/academic/docs/install/#install-with-git">install on your computer using &lt;strong>Git&lt;/strong> with the Command Prompt/Terminal app&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://sourcethemes.com/academic/docs/install/#install-with-zip">install on your computer by downloading the &lt;strong>ZIP files&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://sourcethemes.com/academic/docs/install/#install-with-rstudio">install on your computer with &lt;strong>RStudio&lt;/strong>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>Then &lt;a href="https://sourcethemes.com/academic/docs/get-started/">personalize and deploy your new site&lt;/a>.&lt;/p>
-&lt;h2 id="updating">Updating&lt;/h2>
-&lt;p>&lt;a href="https://sourcethemes.com/academic/docs/update/">View the Update Guide&lt;/a>.&lt;/p>
-&lt;p>Feel free to &lt;em>star&lt;/em> the project on &lt;a href="https://github.com/gcushen/hugo-academic/">Github&lt;/a> to help keep track of &lt;a href="https://sourcethemes.com/academic/updates">updates&lt;/a>.&lt;/p>
-&lt;h2 id="license">License&lt;/h2>
-&lt;p>Copyright 2016-present &lt;a href="https://georgecushen.com">George Cushen&lt;/a>.&lt;/p>
-&lt;p>Released under the &lt;a href="https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md">MIT&lt;/a> license.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brij Mohan Lal Srivastava</title>
+    <link>https://brijmohan.github.io/authors/admin/</link>
+      <atom:link href="https://brijmohan.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Brij Mohan Lal Srivastava</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://brijmohan.github.io/img/icon-192.png</url>
+      <title>Brij Mohan Lal Srivastava</title>
+      <link>https://brijmohan.github.io/authors/admin/</link>
+    </image>
+    
+    <item>
+      <title>Acoustic Token Admixture for Joint Speaker and Content Anonymization</title>
+      <link>https://brijmohan.github.io/publication/acoustic-token-is26/</link>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/acoustic-token-is26/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Legally Validated Evaluation Framework for Voice Anonymization</title>
+      <link>https://brijmohan.github.io/publication/eval-framework-is25/</link>
+      <pubDate>Sun, 17 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/eval-framework-is25/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Code.&lt;/strong&gt; The reference implementation of both metrics is open source as &lt;a href=&#34;https://github.com/brijmohan/voice-anonymization-legal-eval&#34;&gt;voice-anonymization-legal-eval&lt;/a&gt; (&lt;code&gt;pip install voice-anonymization-legal-eval&lt;/code&gt;), with the score matrices and dataset definitions on &lt;a href=&#34;https://doi.org/10.5281/zenodo.23142030&#34;&gt;Zenodo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On the CNIL&amp;rsquo;s role, stated precisely.&lt;/strong&gt; In August 2024 the Technological Expertise Department of the CNIL, the French data protection authority, reviewed Nijta&amp;rsquo;s Voice Harbor solution and identified no obstacle to it demonstrating compliance with the three anonymization criteria of Article 29 Working Party Opinion 05/2014. These metrics were the vehicle of that demonstration. It is a technical opinion on a solution, not a certification of the metrics, and it does not transfer to an organisation deploying the solution, which must demonstrate anonymity in its own context.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Differentially Private Speaker Anonymization</title>
+      <link>https://brijmohan.github.io/publication/dpspeech-2022/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/dpspeech-2022/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Enhancing Speech Privacy with Slicing</title>
+      <link>https://brijmohan.github.io/publication/slicing-is22/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/slicing-is22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy and Utility of X-Vector Based Speaker Anonymization</title>
+      <link>https://brijmohan.github.io/publication/xvector-taslp22/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/xvector-taslp22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The VoicePrivacy 2020 Challenge: Results and findings</title>
+      <link>https://brijmohan.github.io/publication/vpc-csl-2022/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/vpc-csl-2022/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A comparative study of speech anonymization metrics</title>
+      <link>https://brijmohan.github.io/publication/metrics-is20/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/metrics-is20/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Design Choices for X-vector Based Speaker Anonymization</title>
+      <link>https://brijmohan.github.io/publication/design-choices-is20/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/design-choices-is20/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing the VoicePrivacy initiative</title>
+      <link>https://brijmohan.github.io/publication/vpc-initiative-is20/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/vpc-initiative-is20/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learnings from Technological Interventions in a Low Resource Language: A Case-Study on Gondi</title>
+      <link>https://brijmohan.github.io/publication/gondi-lrec20/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/gondi-lrec20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluating voice conversion-based privacy protection against informed attackers</title>
+      <link>https://brijmohan.github.io/publication/attacker-icassp20/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/attacker-icassp20/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy-Preserving Adversarial Representation Learning in ASR: Reality or Illusion?</title>
+      <link>https://brijmohan.github.io/publication/privacy-is19/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/privacy-is19/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Homophone Identification and Merging for Code-switched Speech Recognition</title>
+      <link>https://brijmohan.github.io/publication/homophone-is18/</link>
+      <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/homophone-is18/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Phonetically Balanced Code-Mixed Speech Corpus for Hindi-English Automatic Speech Recognition</title>
+      <link>https://brijmohan.github.io/publication/pbcm-lrec18/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/pbcm-lrec18/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Significance of neural phonotactic models for large-scale spoken language identification</title>
+      <link>https://brijmohan.github.io/publication/lid-ijcnn17/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/lid-ijcnn17/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

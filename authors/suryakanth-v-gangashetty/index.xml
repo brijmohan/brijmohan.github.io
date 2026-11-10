@@ -1,3 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Suryakanth V Gangashetty | Brij Mohan Lal Srivastava</title><link>https://brijmohan.github.io/authors/suryakanth-v-gangashetty/</link><atom:link href="https://brijmohan.github.io/authors/suryakanth-v-gangashetty/index.xml" rel="self" type="application/rss+xml"/><description>Suryakanth V Gangashetty</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Mon, 07 May 2018 00:00:00 +0000</lastBuildDate><image><url>https://brijmohan.github.io/img/icon-192.png</url><title>Suryakanth V Gangashetty</title><link>https://brijmohan.github.io/authors/suryakanth-v-gangashetty/</link></image><item><title>Phonetically Balanced Code-Mixed Speech Corpus for Hindi-English Automatic Speech Recognition</title><link>https://brijmohan.github.io/publication/pbcm-lrec18/</link><pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate><guid>https://brijmohan.github.io/publication/pbcm-lrec18/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math&lt;/a>.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Suryakanth V Gangashetty | Brij Mohan Lal Srivastava</title>
+    <link>https://brijmohan.github.io/authors/suryakanth-v-gangashetty/</link>
+      <atom:link href="https://brijmohan.github.io/authors/suryakanth-v-gangashetty/index.xml" rel="self" type="application/rss+xml" />
+    <description>Suryakanth V Gangashetty</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2026</copyright><lastBuildDate>Mon, 07 May 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://brijmohan.github.io/img/icon-192.png</url>
+      <title>Suryakanth V Gangashetty</title>
+      <link>https://brijmohan.github.io/authors/suryakanth-v-gangashetty/</link>
+    </image>
+    
+    <item>
+      <title>Phonetically Balanced Code-Mixed Speech Corpus for Hindi-English Automatic Speech Recognition</title>
+      <link>https://brijmohan.github.io/publication/pbcm-lrec18/</link>
+      <pubDate>Mon, 07 May 2018 00:00:00 +0000</pubDate>
+      <guid>https://brijmohan.github.io/publication/pbcm-lrec18/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
